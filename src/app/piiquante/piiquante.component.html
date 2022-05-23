@@ -1,0 +1,54 @@
+<div class="main-container">
+    <button mat-icon-button class="close-button" (click)="closeMe()">
+        <mat-icon class="close-icon" color="primary">close</mat-icon>
+    </button>
+
+    <div class="main-container__logo">
+        <img src="../../assets/piiquante/piiquanteLogo.png" alt="Piiquante logo">
+    </div>
+
+    <p>
+        Piiquante est une société de sauce piquante qui veut développer une application web de critique des sauces piquantes appelée « Hot Takes ».
+        Si la responsable produit de Piiquante souhaite à terme transformer l'application d'évaluation en une boutique en ligne, elle souhaite que la première version soit une « galerie de sauces » permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent
+    </p>
+    
+    <figure>
+        <button mat-button (click)="openDialog('piiquanteRegister')">
+            <img src="../../assets/piiquante/piiquante-register.jpeg" alt="création de compte" class="template">
+        </button>
+        <figcaption>Création de compte</figcaption>
+    </figure>
+
+    <figure>
+        <button mat-button (click)="openDialog('piiquanteListOfProducts')">
+            <img src="../../assets/piiquante/piiquante-list-sauces.jpeg" alt="liste des sauces" class="template">
+        </button>
+        <figcaption>Liste des différentes sauces</figcaption>
+    </figure>
+
+    <figure>
+        <button mat-button (click)="openDialog('piiquanteSinglePage')">
+            <img src="../../assets/piiquante/piiquante-single-page.jpeg" alt="vue détaillée d'une sauce" class="template">
+        </button>
+        <figcaption>Vue détaillée d'une sauce</figcaption>
+    </figure>
+
+    <figure>
+        <button mat-button (click)="openDialog('piiquanteNewSauce')">
+            <img src="../../assets/piiquante/piiquante-create-new-sauce.jpeg" alt="création d'une sauce" class="template">
+        </button>
+        <figcaption>Création d'une nouvelle sauce</figcaption>
+    </figure>
+
+    <footer>
+        <a href="https://github.com/Jerome-Baille/JeromeBaille_6_24012022" target="_blank">
+            <fa-icon [icon]="faGithub"></fa-icon>
+            <span> Voir le repository du projet</span>
+        </a>
+        <!-- <a href="https://jerome-baille.github.io/JeromeBAILLE_19112021/" target="_blank">
+            <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
+            <span> Voir une démo live</span>
+        </a> -->
+    </footer>
+    <button mat-raised-button color="primary" (click)="closeMe()">Fermer</button>
+</div>

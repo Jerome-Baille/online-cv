@@ -1,0 +1,345 @@
+<div class="container">
+    <!-- Back to the top button -->
+    <button (click)="scrollToTop()" id="myBtn" title="Go to top" [ngClass]="{ 'show-scrollTop': windowScrolled }">
+        <fa-icon [icon]="faRocket" class="rocket"></fa-icon>
+    </button>
+
+    <app-sidebar class="sidebar-container"></app-sidebar>
+
+    <div class="main-container">
+        <section class="main-container__header">
+            <h1 class="main-container__title"><span class="main-container__title__underline">Jér</span>ôme Baille</h1>
+            <h2 class="main-container__subtitle">Développeur Web</h2>
+        </section>
+
+        <mat-tab-group mat-stretch-tabs>
+            <mat-tab>
+              <ng-template mat-tab-label>
+                <h2 class="main-container__h2">Projets</h2>
+              </ng-template>
+                <section class="projects">
+                <div class="projects__container">
+                    <button class="btn-invisible" (click)="load('booki')">
+                    <h3 class="projects__container__title">Booki : Transformation d'une maquette en site web responsive</h3>
+                    <ul class="projects__container__list">
+                        <li>Intégrer du contenu conformément à une maquette</li>
+                        <li>Implémenter une interface responsive</li>
+                    </ul>
+                    <section class="badges-container">
+                        <div class="badges-container__category">
+                            <img src="../../assets/badges/badge_HTML.svg" alt="badge HTML">
+                            <img src="../../assets/badges/badge_CSS.svg" alt="badge CSS">
+                        </div>
+                        <div class="badges-container__category">
+                            <img src="../../assets/badges/badge_Git.svg" alt="badge Git">
+                            <img src="../../assets/badges/badge_Github.svg" alt="badge Github">
+                        </div>
+                    </section>
+                    </button>
+    
+                    <app-booki *ngIf="booki" (closeDetailedView)="triggeredFromChildren($event)"></app-booki>
+                </div>
+    
+                <div class="divider div-transparent"></div>
+    
+                <div class="projects__container">
+                    <button class="btn-invisible" (click)="load('ohMyFood')">
+                    <h3 class="projects__container__title">OhMyFood : Dynamisation d'une page web avec des animations CSS</h3>
+                    <ul class="projects__container__list">
+                        <li>Mettre en œuvre des effets CSS graphiques avancés</li>
+                        <li>Utiliser un système de gestion de versions pour le suivi du projet et son hébergement</li>
+                        <li>Assurer la cohérence graphique d'un site web</li>
+                        <li>Mettre en place son environnement Front-End</li>
+                        <li>Mettre en place une structure de navigation pour un site web</li>
+                    </ul>
+                    <section class="badges-container">
+                        <div class="badges-container__category">
+                            <img src="../../assets/badges/badge_HTML.svg" alt="badge HTML">
+                            <img src="../../assets/badges/badge_CSS.svg" alt="badge CSS">
+                            <img src="../../assets/badges/badge_Sass.svg" alt="badge Sass">
+                        </div>
+                        <div class="badges-container__category">
+                            <img src="../../assets/badges/badge_Git.svg" alt="badge Git">
+                            <img src="../../assets/badges/badge_Github.svg" alt="badge Github">
+                        </div>
+                    </section>
+                    </button>
+    
+                    <app-oh-my-food *ngIf="ohMyFood" (closeDetailedView)="triggeredFromChildren($event)"></app-oh-my-food>
+                </div>
+    
+                <div class="divider div-transparent"></div>
+    
+                <div class="projects__container">
+                    <button class="btn-invisible" (click)="load('laChouetteAgence')">
+                    <h3 class="projects__container__title">La Chouette Agence : Optimisation d'un site web existant</h3>
+                    <ul class="projects__container__list">
+                        <li>Optimiser la taille et la vitesse d’un site web</li>
+                        <li>Assurer l'accessibilité d'un site web</li>
+                        <li>Optimiser le référencement d'un site web</li>
+                        <li>Réaliser une recherche des bonnes pratiques en développement web</li>
+                        <li>Écrire un code HTML et CSS maintenable</li>
+                    </ul>
+                    <section class="badges-container">
+                        <div class="badges-container__category">
+                            <img src="../../assets/badges/badge_SEO.svg" alt="badge SEO">
+                            <img src="../../assets/badges/badge_HTML.svg" alt="badge HTML">
+                            <img src="../../assets/badges/badge_CSS.svg" alt="badge CSS">
+                        </div>
+                        <div class="badges-container__category">
+                            <img src="../../assets/badges/badge_Git.svg" alt="badge Git">
+                            <img src="../../assets/badges/badge_Github.svg" alt="badge Github">
+                        </div>
+                    </section>
+                    </button>
+    
+                    <app-la-chouette-agence *ngIf="laChouetteAgence" (closeDetailedView)="triggeredFromChildren($event)"></app-la-chouette-agence>
+                </div>
+    
+                <div class="divider div-transparent"></div>
+    
+                <div class="projects__container">
+                    <button class="btn-invisible" (click)="load('kanap')">
+                    <h3 class="projects__container__title">Kanap : Construction d'un site e-commerce en JavaScript</h3>
+                    <ul class="projects__container__list">
+                        <li>Valider des données issues de sources externes</li>
+                        <li>Gérer des événements JavaScript</li>
+                        <li>Créer un plan de test pour une application</li>
+                        <li>Interagir avec un web service avec JavaScript</li>
+                    </ul>
+                    <section class="badges-container">
+                        <div class="badges-container__category">
+                            <img src="../../assets/badges/badge_JavaScript.svg" alt="badge JavaScript">
+                            <img src="../../assets/badges/badge_Git.svg" alt="badge Git">
+                            <img src="../../assets/badges/badge_Github.svg" alt="badge Github">
+                        </div>
+                    </section>
+                    </button>
+    
+                    <app-kanap *ngIf="kanap" (closeDetailedView)="triggeredFromChildren($event)"></app-kanap>
+                </div>
+    
+                <div class="divider div-transparent"></div>
+    
+                <div class="projects__container">
+                    <button class="btn-invisible" (click)="load('piiquante')">
+                    <h3 class="projects__container__title">Piiquante : Construction d'une API pour une app d'avis gastronomiques</h3>
+                    <ul class="projects__container__list">
+                        <li>Implémenter un modèle logique de données conformément à la réglementation</li>
+                        <li>Mettre en œuvre des opérations CRUD de manière sécurisée</li>
+                        <li>Stocker des données de manière sécurisée</li>
+                    </ul>
+                    <section class="badges-container">
+                        <div class="badges-container__category">
+                            <img src="../../assets/badges/badge_NodeJs.svg" alt="badge NodeJS">
+                            <img src="../../assets/badges/badge_Express.svg" alt="badge Express">
+                            <img src="../../assets/badges/badge_MongoDB.svg" alt="badge MongoDB">
+                        </div>
+                        <div class="badges-container__category">
+                            <img src="../../assets/badges/badge_Git.svg" alt="badge Git">
+                            <img src="../../assets/badges/badge_Github.svg" alt="badge Github">
+                        </div>
+                    </section>
+                    </button>
+    
+                    <app-piiquante *ngIf="piiquante" (closeDetailedView)="triggeredFromChildren($event)"></app-piiquante>
+                </div>
+    
+                <div class="divider div-transparent"></div>
+    
+                <div class="projects__container">
+                    <button class="btn-invisible" (click)="load('groupomania')">
+                    <h3 class="projects__container__title">Groupomania : Création d'un réseau social d'entreprise</h3>
+                    <ul class="projects__container__list">
+                        <li>Authentifier un utilisateur et maintenir sa session</li>
+                        <li>Gérer un stockage de données à l'aide de SQL</li>
+                        <li>Implémenter un stockage de données sécurisé en utilisant SQL</li>
+                        <li>Personnaliser le contenu envoyé à un client web</li>
+                    </ul>
+                    <section class="badges-container">
+                        <div class="badges-container__category">
+                            <img src="../../assets/badges/badge_Angular.svg" alt="badge Angular">
+                            <img src="../../assets/badges/badge_Sass.svg" alt="badge Sass">
+                        </div>
+                        <div class="badges-container__category">
+                            <img src="../../assets/badges/badge_NodeJs.svg" alt="badge NodeJS">
+                            <img src="../../assets/badges/badge_Express.svg" alt="badge Express">
+                            <img src="../../assets/badges/badge_MySQL.svg" alt="badge MySQL">
+                        </div>
+                        <div class="badges-container__category">
+                            <img src="../../assets/badges/badge_Git.svg" alt="badge Git">
+                            <img src="../../assets/badges/badge_Github.svg" alt="badge Github">
+                        </div>
+                    </section>
+                    </button>
+    
+                    <app-groupomania *ngIf="groupomania" (closeDetailedView)="triggeredFromChildren($event)"></app-groupomania>
+                </div>
+                </section>
+            </mat-tab>
+          
+            <mat-tab>
+              <ng-template mat-tab-label>
+                <h2 class="main-container__h2">Experience</h2>
+              </ng-template>
+                <section class="experience">
+                <div class="experience__container">
+                    <header class="experience__container__header">
+                        <div class="experience__container__logo-container">
+                            <img src="../../assets/experience/Logo_CA.png" alt="Logo Crédit Agricole du Languedoc">
+                        </div>
+                        <div>   
+                            <h3 class="experience__container__title">Assistant de fonctionnement d'agence</h3>
+                            <p class="experience__container__company">Crédit Agricole du Languedoc | 2 ans</p>
+                        </div>
+                    </header>
+                    <div class="experience__container__body">
+                        <ul class="experience__container__list">
+                            <li>
+                                Accueil des clients et vente des différents produits
+                            </li>
+                            <li>
+                                Prise de rendez-vous auprès des conseillers
+                            </li>
+                            <li>
+                                Gestion de la conformité
+                            </li>
+                            <li>
+                                Gestion des opérations courantes (dépôts, retraits et virement) et des espèces
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="divider div-transparent"></div>
+    
+                <div class="experience__container">
+                    <header class="experience__container__header">
+                        <div class="experience__container__logo-container">
+                            <img src="../../assets/experience/Logo_BP-du-sud.jpg" alt="Logo Crédit Agricole du Languedoc">
+                        </div>
+                        <div>  
+                            <h3 class="experience__container__title">Auxiliaire d'accueil</h3>
+                            <p  class="experience__container__company">Banque Populaire du sud | 4 mois</p>
+                        </div>
+                    </header>
+                    <div class="experience__container__body">
+                        <ul  class="experience__container__list">
+                            <li>
+                                Accueil du public au sein de l’agence et par téléphone
+                            </li>
+                            <li>
+                                Prise de rendez-vous auprès des conseillers
+                            </li>
+                            <li>
+                                Identification des besoins des clients et présentations des produits répondant à leurs attentes
+                            </li>
+                            <li>
+                                Gestion des opérations courantes (dépôts, retraits et virements)
+                            </li>
+                            <li>
+                                Gestion des différents documents et produits (chéquiers, cartes bancaires…) à délivrer aux clients après vérification de leur identité
+                            </li>
+                            <li>
+                                Gestion du courrier 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </section>
+            </mat-tab>
+          
+            <mat-tab>
+              <ng-template mat-tab-label>
+                <h2 class="main-container__h2">Education</h2>
+              </ng-template>
+                <section class="education">    
+                <div class="education__container">
+                    <header class="education__container__header">
+                        <div class="education__container__logo-container">
+                            <img src="../../assets/education/Logo_OpenClassrooms.png" alt="Logo OpenClassrooms">
+                        </div>
+                        <div>                    
+                            <h3 class="education__container__title">Développeur Web (titre RNCP niveau 5)</h3>
+                            <p class="education__container__company">OpenClassrooms | 2021 - 2022</p>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="divider div-transparent"></div>
+    
+                <div class="education__container">
+                    <header class="education__container__header">
+                        <div class="education__container__logo-container">
+                            <img src="../../assets/education/Logo_Paul-Valery_Montpellier-3.jpg" alt="Logo Logo_Paul-Valery_Montpellier-3">
+                        </div>
+                        <div>                    
+                            <h3 class="education__container__title">Master en Littérature et Civilisation Etrangère et Regionale, spécialité Anglais</h3>
+                            <p class="education__container__company">Université de Montpellier 3, Paul-Valéry | 2011 - 2013</p>
+                        </div>
+                    </header>
+                    <div class="education__container__body">
+                        <span>
+                            Obtention d’un master suite à la soutenance de mémoires centrés sur le théâtre post-moderniste au Royaume-Uni.
+                        </span>
+                        <ul class="education__container__list">
+                            <li>
+                                The skirmish of wit : Analyse de la folie dans les pièces Waiting for Godot de Samuel Becket et The Caretaker d’Harold Pinter
+                            </li>
+                            <li>
+                                A mind in chaos suspected of genius : Folie et mathématiques dans Hamlet et King Lear de William Shakespeare, En attendant Godot de Samuel Beckett et Rosencrantz & Guildenstern are dead de Tom Stoppard
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="divider div-transparent"></div>
+    
+                <div class="education__container">
+                    <header class="education__container__header">
+                        <div class="education__container__logo-container">
+                            <img src="../../assets/education/Logo_Unimes.jpg" alt="Logo Université de Nimes">
+                        </div>
+                        <div>                    
+                            <h3 class="education__container__title">Licence en Littérature et Civilisation Etrangère, études Anglophone</h3>
+                            <p class="education__container__company">Université de Nîmes, Vauban | 2008 - 2011</p>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="divider div-transparent"></div>
+
+                <div class="education__container">
+                    <header class="education__container__header">
+                        <div class="education__container__logo-container">
+                            <img src="../../assets/education/Logo_Dhuoda.jpg" alt="Logo Lycée de Dhuoda">
+                        </div>
+                        <div>                    
+                            <h3 class="education__container__title">Classe préparatoire aux grandes écoles : Physique, Technologie et Sciences de l’ingénieur</h3>
+                            <p class="education__container__company"> Lycée Technologique Dhuoda, Nîmes | 2007 - 2008</p>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="divider div-transparent"></div>
+    
+                <div class="education__container">
+                    <header class="education__container__header">
+                        <div class="education__container__logo-container">
+                            <img src="../../assets/education/Logo_Dhuoda.jpg" alt="Logo Lycée de Dhuoda">
+                        </div>
+                        <div> 
+                            <h3 class="education__container__title">Baccalauréat Scientifique, option Sciences de l’ingénieur, spécialité Mathématiques</h3>
+                            <p class="education__container__company"> Lycée Technologique Dhuoda, Nîmes | 2007</p>
+                        </div>
+                    </header>
+                </div>
+                </section>
+            </mat-tab>
+          </mat-tab-group>
+    </div>
+</div>
+
+<footer id="footer">
+    <span>Coded with <fa-icon [icon]="faHeart" class="heart"></fa-icon> by Jerome BAILLE</span>
+</footer>

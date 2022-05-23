@@ -1,0 +1,20 @@
+<svg width="73.4" height="20" viewBox="0 0 734 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Style: Sass">
+  <title>Style: Sass</title>
+  <linearGradient id="a" x2="0" y2="100%">
+    <stop offset="0" stop-opacity=".1" stop-color="#EEE"/>
+    <stop offset="1" stop-opacity=".1"/>
+  </linearGradient>
+  <mask id="m"><rect width="734" height="200" rx="30" fill="#FFF"/></mask>
+  <g mask="url(#m)">
+    <rect width="379" height="200" fill="#555"/>
+    <rect width="355" height="200" fill="#E5B" x="379"/>
+    <rect width="734" height="200" fill="url(#a)"/>
+  </g>
+  <g aria-hidden="true" fill="#fff" text-anchor="start" font-family="Verdana,DejaVu Sans,sans-serif" font-size="110">
+    <text x="60" y="148" textLength="279" fill="#000" opacity="0.25">Style</text>
+    <text x="50" y="138" textLength="279">Style</text>
+    <text x="434" y="148" textLength="255" fill="#000" opacity="0.25">Sass</text>
+    <text x="424" y="138" textLength="255">Sass</text>
+  </g>
+  
+</svg>

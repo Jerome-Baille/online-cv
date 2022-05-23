@@ -1,0 +1,83 @@
+.profile-container {
+    padding: 30px;
+    text-align: center;
+
+    &__picture {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 15px;
+        border: 0px solid #fff;
+        border-radius: 100%;
+        box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+        object-fit: cover;
+    }
+}
+
+.contact-container, .competences-container, .languages-container {
+    padding: 30px;
+
+    &__title {
+        font-family: 'Source Sans Pro', sans-serif;
+        letter-spacing: 0.25rem;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    &__element {
+        display: flex;
+        align-items: baseline;
+        column-gap: 1rem;
+        margin-bottom: 1rem;
+
+        & p {
+            margin: 0 !important;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    // & li {
+    //     font-size: 0.8rem;
+    // }
+
+    &__soft-skills {
+        padding-left: 1rem;
+    }
+
+    &__hard-skills {
+        &__title {
+            margin:0;
+        }
+        &__element {
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.8rem;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__list {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+
+        & li {
+            font-size: 1rem;
+
+            & .detail-lang {
+                color:rgb(255,255,255,0.6);
+            }
+        }
+    }
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}

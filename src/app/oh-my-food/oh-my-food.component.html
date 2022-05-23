@@ -1,0 +1,60 @@
+<div class="main-container">
+    <button mat-icon-button class="close-button" (click)="closeMe()">
+        <mat-icon class="close-icon" color="primary">close</mat-icon>
+    </button>
+
+    <div class="main-container__logo">
+        <img src="../../assets/ohMyFood/ohmyfood-logo.png" alt="OhMyFood logo">
+    </div>
+
+    <p>
+        Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration. L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. Finis, les temps d'attente au restaurant !
+    </p>
+
+    <figure>
+        <button mat-button (click)="openDialog('accueil')">
+            <img src="../../assets/ohMyFood/ohmyfood-Accueil-thumbnail.jpg" alt="OhMyFood - Accueil" class="template">
+        </button>
+        <figcaption>Maquette OhMyFood - Accueil</figcaption>
+    </figure>
+
+    <figure>
+        <button mat-button (click)="openDialog('menuALaFrançaise')">
+            <img src="../../assets/ohMyFood/ohmyfood-Menu-À-la-française-thumbnail.jpg" alt="OhMyFood - Menu à la française" class="template">
+        </button>
+        <figcaption>Maquette OhMyFood - Menu à la française</figcaption>
+    </figure>
+
+    <figure>
+        <button mat-button (click)="openDialog('menuLaNoteEnchantée')">
+            <img src="../../assets/ohMyFood/ohmyfood-Menu-La-note-enchantée-thumbnail.jpg" alt="OhMyFood - Menu la note enchantée" class="template">
+        </button>
+        <figcaption>Maquette OhMyFood - Menu la note enchantée</figcaption>
+    </figure>
+
+    <figure>
+        <button mat-button (click)="openDialog('menuLaPaletteDuGout')">
+            <img src="../../assets/ohMyFood/ohmyfood-Menu-La-palette-du-goût-thumbnail.jpg" alt="OhMyFood - Menu la palette du gout" class="template">
+        </button>
+        <figcaption>Maquette OhMyFood - Menu la palette du goût</figcaption>
+    </figure>
+
+    <figure>
+        <button mat-button (click)="openDialog('menuLeDeliceDesSens')">
+            <img src="../../assets/ohMyFood/ohmyfood-Menu-Le-délice-des-sens-thumbnail.jpg" alt="OhMyFood - Menu le delice des sens" class="template">
+        </button>
+        <figcaption>Maquette OhMyFood - Menu le délice des sens</figcaption>
+    </figure>
+
+    <footer>
+        <a href="https://github.com/Jerome-Baille/JeromeBaille_3_21102021" target="_blank">
+            <fa-icon [icon]="faGithub"></fa-icon>
+            <span> Voir le repository du projet</span>
+        </a>
+        <a href="https://jerome-baille.github.io/JeromeBaille_3_21102021/" target="_blank">
+            <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
+            <span> Voir une démo live</span>
+        </a>
+    </footer>
+    <button mat-raised-button color="primary" (click)="closeMe()">Fermer</button>
+</div>

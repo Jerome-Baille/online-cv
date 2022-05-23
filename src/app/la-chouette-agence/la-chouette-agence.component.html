@@ -1,0 +1,53 @@
+<div class="main-container">
+    <button mat-icon-button class="close-button" (click)="closeMe()">
+        <mat-icon class="close-icon" color="primary">close</mat-icon>
+    </button>
+
+    <div class="main-container__logo">
+        <img src="../../assets/laChouetteAgence/la-chouette-agence.png" alt="La Chouette Agence logo">
+    </div>
+
+    <p>
+        La chouette agence est une grande agence de web design basée à Lyon. Suite à des problèmes de référencements, le site ne se trouvait qu'en deuxième page des moteurs de recherche. Une optimisation du SEO a donc été effectuée et une amélioration du code du site afin de corriger les erreurs d'affichage et d'améliorer l'accéssibilité du site.
+    </p>
+    
+    <figure>
+        <button mat-button (click)="openDialog('indexOriginal')">
+            <img src="../../assets/laChouetteAgence/Accueil - original.jpeg" alt="Accueil original" class="template">
+        </button>
+        <figcaption>Version originale de la page d'accueil</figcaption>
+    </figure>
+
+    <figure>
+        <button mat-button (click)="openDialog('indexModified')">
+            <img src="../../assets/laChouetteAgence/Accueil - modified.jpeg" alt="Accueil amélioré" class="template">
+        </button>
+        <figcaption>Version améliorée de la page d'accueil</figcaption>
+    </figure>
+
+    <figure>
+        <button mat-button (click)="openDialog('contactOriginal')">
+            <img src="../../assets/laChouetteAgence/Contact - original.jpeg" alt="Page contact originale" class="template">
+        </button>
+        <figcaption>Version originale de la page Contact</figcaption>
+    </figure>
+
+    <figure>
+        <button mat-button (click)="openDialog('contactModified')">
+            <img src="../../assets/laChouetteAgence/Contact - modified.jpeg" alt="Page contact améliorée" class="template">
+        </button>
+        <figcaption>Version améliorée de la page de Contact</figcaption>
+    </figure>
+
+    <footer>
+        <a href="https://github.com/Jerome-Baille/JeromeBaille_4_09122021" target="_blank">
+            <fa-icon [icon]="faGithub"></fa-icon>
+            <span> Voir le repository du projet</span>
+        </a>
+        <a href="https://jerome-baille.github.io/JeromeBaille_4_09122021/" target="_blank">
+            <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
+            <span> Voir une démo live</span>
+        </a>
+    </footer>
+    <button mat-raised-button color="primary" (click)="closeMe()">Fermer</button>
+</div>
