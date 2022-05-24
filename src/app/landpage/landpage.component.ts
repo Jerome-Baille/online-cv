@@ -7,7 +7,6 @@ import { faHeart, faRocket } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./landpage.component.scss']
 })
 export class LandpageComponent implements OnInit {
-
   faRocket = faRocket;
   faHeart = faHeart;
 

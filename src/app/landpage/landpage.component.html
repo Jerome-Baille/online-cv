@@ -17,7 +17,8 @@
               <ng-template mat-tab-label>
                 <h2 class="main-container__h2">Projets</h2>
               </ng-template>
-                <section class="projects">
+              <app-projects></app-projects>
+                <!-- <section class="projects">
                 <div class="projects__container">
                     <button class="btn-invisible" (click)="load('booki')">
                     <h3 class="projects__container__title">Booki : Transformation d'une maquette en site web responsive</h3>
@@ -175,7 +176,7 @@
     
                     <app-groupomania *ngIf="groupomania" (closeDetailedView)="triggeredFromChildren($event)"></app-groupomania>
                 </div>
-                </section>
+                </section> -->
             </mat-tab>
           
             <mat-tab>

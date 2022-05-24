@@ -1,0 +1,484 @@
+<section class="projects">
+    <mat-accordion>
+        <mat-expansion-panel hideToggle (opened)="bookiPanel = true" (closed)="bookiPanel = false" [expanded]="bookiPanel">
+            <mat-expansion-panel-header>
+            <mat-panel-description>
+                <div class="projects__container">
+                    <button class="btn-invisible">
+                    <h3 class="projects__container__title">Booki : Transformation d'une maquette en site web responsive</h3>
+                    <ul class="projects__container__list">
+                        <li>Intégrer du contenu conformément à une maquette</li>
+                        <li>Implémenter une interface responsive</li>
+                    </ul>
+                    <section class="badges-container">
+                        <div class="badges-container__category">
+                            <img src="../../assets/badges/badge_HTML.svg" alt="badge HTML">
+                            <img src="../../assets/badges/badge_CSS.svg" alt="badge CSS">
+                        </div>
+                        <div class="badges-container__category">
+                            <img src="../../assets/badges/badge_Git.svg" alt="badge Git">
+                            <img src="../../assets/badges/badge_Github.svg" alt="badge Github">
+                        </div>
+                    </section>
+                    </button>
+                </div>
+            </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div class="main-container">
+                <button mat-icon-button class="close-button" (click)="closePanel('bookiPanel')">
+                    <mat-icon class="close-icon" color="primary">close</mat-icon>
+                </button>
+            
+                <div class="main-container__logo">
+                    <img src="../../assets/booki/booki-logo.png" alt="Booki logo">
+                </div>
+            
+                <p>
+                    Booki est une petite entreprise proposant un outil de planification de vacances ! Son site permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance.
+                </p>
+                
+                <figure>
+                    <button mat-button (click)="openDialog('bookiDesktop')">
+                        <img src="../../assets/booki/booki-desktop-thumbnail.jpg" alt="Desktop template" class="template">
+                    </button>
+                    <figcaption>Maquette version Desktop</figcaption>
+                </figure>
+            
+                <figure>
+                    <button mat-button (click)="openDialog('bookiMobile')">
+                        <img src="../../assets/booki/booki-mobile-thumbnail.jpg" alt="Mobile template" class="template">
+                    </button>
+                    <figcaption>Maquette version Mobile</figcaption>
+                </figure>
+            
+                <footer>
+                    <a href="https://github.com/Jerome-Baille/JeromeBAILLE_19112021" target="_blank">
+                        <fa-icon [icon]="faGithub"></fa-icon>
+                        <span> Voir le repository du projet</span>
+                    </a>
+                    <a href="https://jerome-baille.github.io/JeromeBAILLE_19112021/" target="_blank">
+                        <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
+                        <span> Voir une démo live</span>
+                    </a>
+                </footer>
+                <button mat-raised-button color="primary" (click)="closePanel('bookiPanel')">Fermer</button>
+            </div>
+        </mat-expansion-panel>
+
+        <div class="divider div-transparent"></div>
+
+        <mat-expansion-panel hideToggle (opened)="ohMyFoodPanel = true" (closed)="ohMyFoodPanel = false" [expanded]="ohMyFoodPanel">
+            <mat-expansion-panel-header>
+            <mat-panel-description>
+                <div class="projects__container">
+                    <button class="btn-invisible">
+                    <h3 class="projects__container__title">OhMyFood : Dynamisation d'une page web avec des animations CSS</h3>
+                    <ul class="projects__container__list">
+                        <li>Mettre en œuvre des effets CSS graphiques avancés</li>
+                        <li>Utiliser un système de gestion de versions pour le suivi du projet et son hébergement</li>
+                        <li>Assurer la cohérence graphique d'un site web</li>
+                        <li>Mettre en place son environnement Front-End</li>
+                        <li>Mettre en place une structure de navigation pour un site web</li>
+                    </ul>
+                    <section class="badges-container">
+                        <div class="badges-container__category">
+                            <img src="../../assets/badges/badge_HTML.svg" alt="badge HTML">
+                            <img src="../../assets/badges/badge_CSS.svg" alt="badge CSS">
+                            <img src="../../assets/badges/badge_Sass.svg" alt="badge Sass">
+                        </div>
+                        <div class="badges-container__category">
+                            <img src="../../assets/badges/badge_Git.svg" alt="badge Git">
+                            <img src="../../assets/badges/badge_Github.svg" alt="badge Github">
+                        </div>
+                    </section>
+                    </button>
+                </div>
+            </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div class="main-container">
+                <button mat-icon-button class="close-button" (click)="closePanel('ohMyFoodPanel')">
+                    <mat-icon class="close-icon" color="primary">close</mat-icon>
+                </button>
+            
+                <div class="main-container__logo">
+                    <img src="../../assets/ohMyFood/ohmyfood-logo.png" alt="OhMyFood logo">
+                </div>
+            
+                <p>
+                    Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration. L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. Finis, les temps d'attente au restaurant !
+                </p>
+            
+                <figure>
+                    <button mat-button (click)="openDialog('ohMyFoodAccueil')">
+                        <img src="../../assets/ohMyFood/ohmyfood-Accueil-thumbnail.jpg" alt="OhMyFood - Accueil" class="template">
+                    </button>
+                    <figcaption>Maquette OhMyFood - Accueil</figcaption>
+                </figure>
+            
+                <figure>
+                    <button mat-button (click)="openDialog('ohMyFoodMenu')">
+                        <img src="../../assets/ohMyFood/ohmyfood-Menu-À-la-française-thumbnail.jpg" alt="OhMyFood - Menu à la française" class="template">
+                    </button>
+                    <figcaption>Maquette OhMyFood - Menu à la française</figcaption>
+                </figure>
+            
+                <footer>
+                    <a href="https://github.com/Jerome-Baille/JeromeBaille_3_21102021" target="_blank">
+                        <fa-icon [icon]="faGithub"></fa-icon>
+                        <span> Voir le repository du projet</span>
+                    </a>
+                    <a href="https://jerome-baille.github.io/JeromeBaille_3_21102021/" target="_blank">
+                        <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
+                        <span> Voir une démo live</span>
+                    </a>
+                </footer>
+                <button mat-raised-button color="primary" (click)="closePanel('ohMyFoodPanel')">Fermer</button>
+            </div>
+        </mat-expansion-panel>
+
+        <div class="divider div-transparent"></div>
+
+        <mat-expansion-panel hideToggle (opened)="laChouetteAgencePanel = true" (closed)="laChouetteAgencePanel = false" [expanded]="laChouetteAgencePanel">
+        <mat-expansion-panel-header>
+        <mat-panel-description>
+            <div class="projects__container">
+                <button class="btn-invisible">
+                <h3 class="projects__container__title">La Chouette Agence : Optimisation d'un site web existant</h3>
+                <ul class="projects__container__list">
+                    <li>Optimiser la taille et la vitesse d’un site web</li>
+                    <li>Assurer l'accessibilité d'un site web</li>
+                    <li>Optimiser le référencement d'un site web</li>
+                    <li>Réaliser une recherche des bonnes pratiques en développement web</li>
+                    <li>Écrire un code HTML et CSS maintenable</li>
+                </ul>
+                <section class="badges-container">
+                    <div class="badges-container__category">
+                        <img src="../../assets/badges/badge_SEO.svg" alt="badge SEO">
+                        <img src="../../assets/badges/badge_HTML.svg" alt="badge HTML">
+                        <img src="../../assets/badges/badge_CSS.svg" alt="badge CSS">
+                    </div>
+                    <div class="badges-container__category">
+                        <img src="../../assets/badges/badge_Git.svg" alt="badge Git">
+                        <img src="../../assets/badges/badge_Github.svg" alt="badge Github">
+                    </div>
+                </section>
+                </button>
+            </div>
+        </mat-panel-description>
+        </mat-expansion-panel-header>
+            <div class="main-container">
+                <button mat-icon-button class="close-button" (click)="closePanel('laChouetteAgencePanel')">
+                    <mat-icon class="close-icon" color="primary">close</mat-icon>
+                </button>
+            
+                <div class="main-container__logo">
+                    <img src="../../assets/laChouetteAgence/la-chouette-agence.png" alt="La Chouette Agence logo">
+                </div>
+            
+                <p>
+                    La chouette agence est une grande agence de web design basée à Lyon. Suite à des problèmes de référencements, le site ne se trouvait qu'en deuxième page des moteurs de recherche. Une optimisation du SEO a donc été effectuée et une amélioration du code du site afin de corriger les erreurs d'affichage et d'améliorer l'accéssibilité du site.
+                </p>
+                
+                <figure>
+                    <button mat-button (click)="openDialog('laChouetteAgenceAccueilOriginal')">
+                        <img src="../../assets/laChouetteAgence/Accueil - original.jpeg" alt="Accueil original" class="template">
+                    </button>
+                    <figcaption>Version originale de la page d'accueil</figcaption>
+                </figure>
+            
+                <figure>
+                    <button mat-button (click)="openDialog('laChouetteAgenceAccueilModified')">
+                        <img src="../../assets/laChouetteAgence/Accueil - modified.jpeg" alt="Accueil amélioré" class="template">
+                    </button>
+                    <figcaption>Version améliorée de la page d'accueil</figcaption>
+                </figure>
+            
+                <figure>
+                    <button mat-button (click)="openDialog('laChouetteAgenceContactOriginal')">
+                        <img src="../../assets/laChouetteAgence/Contact - original.jpeg" alt="Page contact originale" class="template">
+                    </button>
+                    <figcaption>Version originale de la page Contact</figcaption>
+                </figure>
+            
+                <figure>
+                    <button mat-button (click)="openDialog('laChouetteAgenceContactModified')">
+                        <img src="../../assets/laChouetteAgence/Contact - modified.jpeg" alt="Page contact améliorée" class="template">
+                    </button>
+                    <figcaption>Version améliorée de la page de Contact</figcaption>
+                </figure>
+            
+                <footer>
+                    <a href="https://github.com/Jerome-Baille/JeromeBaille_4_09122021" target="_blank">
+                        <fa-icon [icon]="faGithub"></fa-icon>
+                        <span> Voir le repository du projet</span>
+                    </a>
+                    <a href="https://jerome-baille.github.io/JeromeBaille_4_09122021/" target="_blank">
+                        <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
+                        <span> Voir une démo live</span>
+                    </a>
+                </footer>
+                <button mat-raised-button color="primary" (click)="closePanel('laChouetteAgencePanel')">Fermer</button>
+            </div>
+        </mat-expansion-panel>
+
+        <div class="divider div-transparent"></div>
+
+        <mat-expansion-panel hideToggle (opened)="kanapPanel = true" (closed)="kanapPanel = false" [expanded]="kanapPanel">
+            <mat-expansion-panel-header>
+            <mat-panel-description>
+                <div class="projects__container">
+                    <button class="btn-invisible">
+                    <h3 class="projects__container__title">Kanap : Construction d'un site e-commerce en JavaScript</h3>
+                    <ul class="projects__container__list">
+                        <li>Valider des données issues de sources externes</li>
+                        <li>Gérer des événements JavaScript</li>
+                        <li>Créer un plan de test pour une application</li>
+                        <li>Interagir avec un web service avec JavaScript</li>
+                    </ul>
+                    <section class="badges-container">
+                        <div class="badges-container__category">
+                            <img src="../../assets/badges/badge_JavaScript.svg" alt="badge JavaScript">
+                            <img src="../../assets/badges/badge_Git.svg" alt="badge Git">
+                            <img src="../../assets/badges/badge_Github.svg" alt="badge Github">
+                        </div>
+                    </section>
+                    </button>
+                </div>
+            </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div class="main-container">
+                <button mat-icon-button class="close-button" (click)="closePanel('kanapPanel')">
+                    <mat-icon class="close-icon" color="primary">close</mat-icon>
+                </button>
+            
+                <div class="main-container__logo">
+                    <img src="../../assets/kanap/logo.png" alt="Kanap logo">
+                </div>
+            
+                <p>
+                    Kanap est une marque de canapés qui vend ses produits depuis sa boutique exclusivement. Aujourd’hui, celle-ci souhaitait avoir une plateforme de e-commerce en plus de sa boutique physique pour vendre ses produits sur Internet.
+                </p>
+                
+                <figure>
+                    <button mat-button (click)="openDialog('kanapListOfProducts')">
+                        <img src="../../assets/kanap/list-of-products.jpeg" alt="liste des produits" class="template">
+                    </button>
+                    <figcaption>Liste des produits</figcaption>
+                </figure>
+            
+                <figure>
+                    <button mat-button (click)="openDialog('kanapSinglePage')">
+                        <img src="../../assets/kanap/single-product-page.jpeg" alt="vue détaillée d'un produit" class="template">
+                    </button>
+                    <figcaption>Vue détaillée d'un produit</figcaption>
+                </figure>
+            
+                <figure>
+                    <button mat-button (click)="openDialog('kanapCart')">
+                        <img src="../../assets/kanap/cart.jpeg" alt="page panier" class="template">
+                    </button>
+                    <figcaption>Page panier</figcaption>
+                </figure>
+            
+                <figure>
+                    <button mat-button (click)="openDialog('kanapOrderConfirmation')">
+                        <img src="../../assets/kanap/order-number.jpeg" alt="confirmation de commande" class="template">
+                    </button>
+                    <figcaption>Page de confirmation de commande</figcaption>
+                </figure>
+            
+                <footer>
+                    <a href="https://github.com/Jerome-Baille/JeromeBaille_5_03012022" target="_blank">
+                        <fa-icon [icon]="faGithub"></fa-icon>
+                        <span> Voir le repository du projet</span>
+                    </a>
+                    <!-- <a href="https://jerome-baille.github.io/JeromeBAILLE_19112021/" target="_blank">
+                        <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
+                        <span> Voir une démo live</span>
+                    </a> -->
+                </footer>
+                <button mat-raised-button color="primary" (click)="closePanel('kanapPanel')">Fermer</button>
+            </div>
+        </mat-expansion-panel>
+
+    <div class="divider div-transparent"></div>
+
+    <mat-expansion-panel hideToggle (opened)="piiquantePanel = true" (closed)="piiquantePanel = false" [expanded]="piiquantePanel">
+        <mat-expansion-panel-header>
+        <mat-panel-description>
+            <div class="projects__container">
+                <button class="btn-invisible">
+                <h3 class="projects__container__title">Piiquante : Construction d'une API pour une app d'avis gastronomiques</h3>
+                <ul class="projects__container__list">
+                    <li>Implémenter un modèle logique de données conformément à la réglementation</li>
+                    <li>Mettre en œuvre des opérations CRUD de manière sécurisée</li>
+                    <li>Stocker des données de manière sécurisée</li>
+                </ul>
+                <section class="badges-container">
+                    <div class="badges-container__category">
+                        <img src="../../assets/badges/badge_NodeJs.svg" alt="badge NodeJS">
+                        <img src="../../assets/badges/badge_Express.svg" alt="badge Express">
+                        <img src="../../assets/badges/badge_MongoDB.svg" alt="badge MongoDB">
+                    </div>
+                    <div class="badges-container__category">
+                        <img src="../../assets/badges/badge_Git.svg" alt="badge Git">
+                        <img src="../../assets/badges/badge_Github.svg" alt="badge Github">
+                    </div>
+                </section>
+                </button>
+            </div>
+        </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="main-container">
+            <button mat-icon-button class="close-button" (click)="closePanel('piiquantePanel')">
+                <mat-icon class="close-icon" color="primary">close</mat-icon>
+            </button>
+        
+            <div class="main-container__logo">
+                <img src="../../assets/piiquante/piiquanteLogo.png" alt="Piiquante logo">
+            </div>
+        
+            <p>
+                Piiquante est une société de sauce piquante qui veut développer une application web de critique des sauces piquantes appelée « Hot Takes ».
+                Si la responsable produit de Piiquante souhaite à terme transformer l'application d'évaluation en une boutique en ligne, elle souhaite que la première version soit une « galerie de sauces » permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent
+            </p>
+            
+            <figure>
+                <button mat-button (click)="openDialog('piiquanteRegister')">
+                    <img src="../../assets/piiquante/piiquante-register.jpeg" alt="création de compte" class="template">
+                </button>
+                <figcaption>Création de compte</figcaption>
+            </figure>
+        
+            <figure>
+                <button mat-button (click)="openDialog('piiquanteListOfProducts')">
+                    <img src="../../assets/piiquante/piiquante-list-sauces.jpeg" alt="liste des sauces" class="template">
+                </button>
+                <figcaption>Liste des différentes sauces</figcaption>
+            </figure>
+        
+            <figure>
+                <button mat-button (click)="openDialog('piiquanteSinglePage')">
+                    <img src="../../assets/piiquante/piiquante-single-page.jpeg" alt="vue détaillée d'une sauce" class="template">
+                </button>
+                <figcaption>Vue détaillée d'une sauce</figcaption>
+            </figure>
+        
+            <figure>
+                <button mat-button (click)="openDialog('piiquanteNewSauce')">
+                    <img src="../../assets/piiquante/piiquante-create-new-sauce.jpeg" alt="création d'une sauce" class="template">
+                </button>
+                <figcaption>Création d'une nouvelle sauce</figcaption>
+            </figure>
+        
+            <footer>
+                <a href="https://github.com/Jerome-Baille/JeromeBaille_6_24012022" target="_blank">
+                    <fa-icon [icon]="faGithub"></fa-icon>
+                    <span> Voir le repository du projet</span>
+                </a>
+                <!-- <a href="https://jerome-baille.github.io/JeromeBAILLE_19112021/" target="_blank">
+                    <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
+                    <span> Voir une démo live</span>
+                </a> -->
+            </footer>
+            <button mat-raised-button color="primary" (click)="closePanel('piiquantePanel')">Fermer</button>
+        </div>
+    </mat-expansion-panel>
+
+    <div class="divider div-transparent"></div>
+
+    <mat-expansion-panel hideToggle (opened)="groupomaniaPanel = true" (closed)="groupomaniaPanel = false" [expanded]="groupomaniaPanel">
+        <mat-expansion-panel-header>
+        <mat-panel-description>
+            <div class="projects__container">
+                <button class="btn-invisible">
+                <h3 class="projects__container__title">Groupomania : Création d'un réseau social d'entreprise</h3>
+                <ul class="projects__container__list">
+                    <li>Authentifier un utilisateur et maintenir sa session</li>
+                    <li>Gérer un stockage de données à l'aide de SQL</li>
+                    <li>Implémenter un stockage de données sécurisé en utilisant SQL</li>
+                    <li>Personnaliser le contenu envoyé à un client web</li>
+                </ul>
+                <section class="badges-container">
+                    <div class="badges-container__category">
+                        <img src="../../assets/badges/badge_Angular.svg" alt="badge Angular">
+                        <img src="../../assets/badges/badge_Sass.svg" alt="badge Sass">
+                    </div>
+                    <div class="badges-container__category">
+                        <img src="../../assets/badges/badge_NodeJs.svg" alt="badge NodeJS">
+                        <img src="../../assets/badges/badge_Express.svg" alt="badge Express">
+                        <img src="../../assets/badges/badge_MySQL.svg" alt="badge MySQL">
+                    </div>
+                    <div class="badges-container__category">
+                        <img src="../../assets/badges/badge_Git.svg" alt="badge Git">
+                        <img src="../../assets/badges/badge_Github.svg" alt="badge Github">
+                    </div>
+                </section>
+                </button>
+            </div>
+        </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="main-container">
+            <button mat-icon-button class="close-button" (click)="closePanel('groupomaniaPanel')">
+                <mat-icon class="close-icon" color="primary">close</mat-icon>
+            </button>
+        
+            <div class="main-container__logo">
+                <img src="../../assets/groupomania/icon-above-font.png" alt="groupomania logo">
+            </div>
+        
+            <p>
+                Groupomania est un groupe spécialisé dans la grande distribution.
+                Le projet consiste à construire un réseau social interne pour les employés de Groupomania. Le but de cet outil est de faciliter les interactions entre collègues.
+            </p>
+            
+            <figure>
+                <button mat-button (click)="openDialog('groupomaniaIndex')">
+                    <img src="../../assets/groupomania/groupomania-landpage.jpeg" alt="page d'accueil groupomania" class="template">
+                </button>
+                <figcaption>Page d'accueil Groupomania</figcaption>
+            </figure>
+        
+            <figure>
+                <button mat-button (click)="openDialog('groupomaniaListOfPosts')">
+                    <img src="../../assets/groupomania/groupomania-post-list.jpeg" alt="liste des posts" class="template">
+                </button>
+                <figcaption>Liste des différentes publications</figcaption>
+            </figure>
+        
+            <figure>
+                <button mat-button (click)="openDialog('groupomaniaSinglePage')">
+                    <img src="../../assets/groupomania/groupomania-single-page.jpeg" alt="vue détaillée d'un post" class="template">
+                </button>
+                <figcaption>Vue détaillée d'une publication</figcaption>
+            </figure>
+        
+            <figure>
+                <button mat-button (click)="openDialog('groupomaniaProfile')">
+                    <img src="../../assets/groupomania/groupomania-profile.jpeg" alt="vue détaillée d'un profil" class="template">
+                </button>
+                <figcaption>Vue détaillée d'un profil utilisateur</figcaption>
+            </figure>
+        
+            <figure>
+                <button mat-button (click)="openDialog('groupomaniaAdmin')">
+                    <img src="../../assets/groupomania/groupomania-admin-dashboard.jpeg" alt="page de gestion administrateur" class="template">
+                </button>
+                <figcaption>Page de gestion administrateur</figcaption>
+            </figure>
+        
+            <footer>
+                <a href="https://github.com/Jerome-Baille/JeromeBaille_7_23022022" target="_blank">
+                    <fa-icon [icon]="faGithub"></fa-icon>
+                    <span> Voir le repository du projet</span>
+                </a>
+                <!-- <a href="https://jerome-baille.github.io/JeromeBAILLE_19112021/" target="_blank">
+                    <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
+                    <span> Voir une démo live</span>
+                </a> -->
+            </footer>
+            <button mat-raised-button color="primary" (click)="closePanel('groupomaniaPanel')">Fermer</button>
+        </div>
+    </mat-expansion-panel>
+</mat-accordion>
+</section>
