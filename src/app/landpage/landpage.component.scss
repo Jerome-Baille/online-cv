@@ -24,7 +24,6 @@
     &__header {
         height: 250px;
         padding: 60px;
-        margin-bottom: 30px;
     }
 
     &__title {
@@ -129,7 +128,7 @@
     cursor: pointer;
 
     &:hover {
-        border-radius: 8px;
+        border-radius: 8px 8px 0 0;
         animation: button-opacity 0.8s both;
     }
 }

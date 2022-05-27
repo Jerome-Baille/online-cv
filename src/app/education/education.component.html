@@ -1,0 +1,28 @@
+<div *ngFor="let edu of educationArray; last as isLast" class="education__container">
+    <header class="education__container__header">
+        <div class="education__container__logo-container">
+            <img [src]="edu.logo" alt="{{ edu.altLogo }}">
+        </div>
+        <div>                    
+            <h3 class="education__container__title">{{ edu.title }}</h3>
+            <p class="education__container__company">
+                {{ edu.school }} 
+                <span class="pipe-divider">|</span> 
+                {{ edu.location}} 
+                <span class="pipe-divider">|</span> 
+                {{ edu.date }}
+            </p>
+        </div>
+    </header>
+    <div *ngIf="edu.description" class="education__container__body">
+        <span>
+            {{ edu.description }}
+        </span>
+        <ul class="education__container__list">
+            <li *ngFor="let item of edu.listItems">
+                {{ item }}
+            </li>
+        </ul>
+    </div>
+    <div *ngIf="!isLast" class="divider div-transparent"></div>
+</div>

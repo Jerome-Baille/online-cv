@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { MatDialog } from '@angular/material/dialog';
@@ -9,16 +9,20 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
+  @Input() lang!: string;
+  
   faGithub = faGithub;
   faArrowUpRightFromSquare = faArrowUpRightFromSquare;
 
-  panelOpenState: boolean = false;
-  bookiPanel: boolean = false;
-  ohMyFoodPanel: boolean = false;
-  laChouetteAgencePanel: boolean = false;
-  kanapPanel: boolean = false;
-  piiquantePanel : boolean = false;
-  groupomaniaPanel: boolean = false;
+  // panelOpenState: boolean = false;
+  // bookiPanel: boolean = false;
+  // ohMyFoodPanel: boolean = false;
+  // laChouetteAgencePanel: boolean = false;
+  // kanapPanel: boolean = false;
+  // piiquantePanel : boolean = false;
+  // groupomaniaPanel: boolean = false;
+
+  projectsArray: any = [];
 
 
   constructor(
@@ -26,6 +30,20 @@ export class ProjectsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+  }
+
+  ngOnChanges() {
+    if(this.lang === 'fr') {
+      fetch('./assets/i18n/fr.json').then(res => res.json())
+      .then(jsonData => {
+        this.projectsArray = jsonData.projects;
+      });
+    } else {
+      fetch('./assets/i18n/en.json').then(res => res.json())
+      .then(jsonData => {
+        this.projectsArray = jsonData.projects;
+      });
+    }
   }
 
   openDialog(src: string) {
@@ -69,7 +87,7 @@ export class ProjectsComponent implements OnInit {
       case 'piiquanteRegister':
         this.dialog.open(piiquanteRegister);
         break;
-      case 'piiquanteListOfSauces':
+      case 'piiquanteListOfProducts':
         this.dialog.open(piiquanteListOfSauces);
         break;
       case 'piiquanteSinglePage':
@@ -97,14 +115,16 @@ export class ProjectsComponent implements OnInit {
   }
   
 
-  closePanel(src: string) {
-    src == 'bookiPanel' ? this.bookiPanel = !this.bookiPanel : null;
-    src == 'ohMyFoodPanel' ? this.ohMyFoodPanel = !this.ohMyFoodPanel : null;
-    src == 'laChouetteAgencePanel' ? this.laChouetteAgencePanel = !this.laChouetteAgencePanel : null;
-    src == 'kanapPanel' ? this.kanapPanel = !this.kanapPanel : null;
-    src == 'piiquantePanel' ? this.piiquantePanel = !this.piiquantePanel : null;
-    src == 'groupomaniaPanel' ? this.groupomaniaPanel = !this.groupomaniaPanel : null;
-  }
+  // closePanel(src: any) {
+  //   console.log(src);
+  //   src = !src;
+  //   src == 'bookiPanel' ? this.projectsArray.boolean = !this.projectsArray.boolean : null;
+  //   src == 'ohMyFoodPanel' ? this.ohMyFoodPanel = !this.ohMyFoodPanel : null;
+  //   src == 'laChouetteAgencePanel' ? this.laChouetteAgencePanel = !this.laChouetteAgencePanel : null;
+  //   src == 'kanapPanel' ? this.kanapPanel = !this.kanapPanel : null;
+  //   src == 'piiquantePanel' ? this.piiquantePanel = !this.piiquantePanel : null;
+  //   src == 'groupomaniaPanel' ? this.groupomaniaPanel = !this.groupomaniaPanel : null;
+  // }
 }
 
 

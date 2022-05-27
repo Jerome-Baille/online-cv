@@ -1,6 +1,64 @@
 <section class="projects">
-    <mat-accordion>
-        <mat-expansion-panel hideToggle (opened)="bookiPanel = true" (closed)="bookiPanel = false" [expanded]="bookiPanel">
+    <mat-accordion *ngFor="let project of projectsArray; last as isLast" >
+        <mat-expansion-panel #panel hideToggle [expanded]="project.boolean">
+            <mat-expansion-panel-header>
+            <mat-panel-description>
+                <div class="projects__container">
+                    <button class="btn-invisible">
+                    <h3 class="projects__container__title">{{ project.title }}</h3>
+                    <ul class="projects__container__list">
+                        <li *ngFor="let comp of project.competences">{{ comp }}</li>
+                    </ul>
+                    <section class="badges-container">
+                        <div class="badges-container__category">
+                            <img *ngFor="let badge1 of project.badges1" [src]="badge1.src" alt="{{ badge1.alt }}">
+                        </div>
+                        <div class="badges-container__category">
+                            <img *ngFor="let badge2 of project.badges2" [src]="badge2.src" alt="{{ badge2.alt }}">
+                        </div>
+                        <div class="badges-container__category">
+                            <img *ngFor="let badge3 of project.badges3" [src]="badge3.src" alt="{{ badge3.alt }}">
+                        </div>
+                    </section>
+                    </button>
+                </div>
+            </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div class="main-container">
+                <button mat-icon-button class="close-button" (click)="panel.toggle()">
+                    <mat-icon class="close-icon" color="primary">close</mat-icon>
+                </button>
+            
+                <div class="main-container__logo">
+                    <img [src]="project.logo" alt="{{ project.altLogo }}">
+                </div>
+            
+                <p>{{ project.description }}</p>
+                
+                <figure *ngFor="let dialog of project.dialog">
+                    <button mat-button (click)="openDialog(dialog.name)">
+                        <img [src]="dialog.src" alt="{{ dialog.alt }}" class="template">
+                    </button>
+                    <figcaption>{{ dialog.figcaption }}</figcaption>
+                </figure>
+
+                <footer>
+                    <a [href]="project.github" target="_blank">
+                        <fa-icon [icon]="faGithub"></fa-icon>
+                        <span> Voir le repository du projet</span>
+                    </a>
+                    <a [href]="project.demo" target="_blank">
+                        <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
+                        <span> Voir une démo live</span>
+                    </a>
+                </footer>
+                <button mat-raised-button color="primary" (click)="panel.toggle()">Fermer</button>
+            </div>
+        </mat-expansion-panel>
+
+        <div *ngIf="!isLast" class="divider div-transparent"></div>
+
+        <!-- <mat-expansion-panel hideToggle (opened)="bookiPanel = true" (closed)="bookiPanel = false" [expanded]="bookiPanel">
             <mat-expansion-panel-header>
             <mat-panel-description>
                 <div class="projects__container">
@@ -292,10 +350,6 @@
                         <fa-icon [icon]="faGithub"></fa-icon>
                         <span> Voir le repository du projet</span>
                     </a>
-                    <!-- <a href="https://jerome-baille.github.io/JeromeBAILLE_19112021/" target="_blank">
-                        <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
-                        <span> Voir une démo live</span>
-                    </a> -->
                 </footer>
                 <button mat-raised-button color="primary" (click)="closePanel('kanapPanel')">Fermer</button>
             </div>
@@ -376,10 +430,6 @@
                     <fa-icon [icon]="faGithub"></fa-icon>
                     <span> Voir le repository du projet</span>
                 </a>
-                <!-- <a href="https://jerome-baille.github.io/JeromeBAILLE_19112021/" target="_blank">
-                    <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
-                    <span> Voir une démo live</span>
-                </a> -->
             </footer>
             <button mat-raised-button color="primary" (click)="closePanel('piiquantePanel')">Fermer</button>
         </div>
@@ -472,13 +522,9 @@
                     <fa-icon [icon]="faGithub"></fa-icon>
                     <span> Voir le repository du projet</span>
                 </a>
-                <!-- <a href="https://jerome-baille.github.io/JeromeBAILLE_19112021/" target="_blank">
-                    <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
-                    <span> Voir une démo live</span>
-                </a> -->
             </footer>
             <button mat-raised-button color="primary" (click)="closePanel('groupomaniaPanel')">Fermer</button>
         </div>
-    </mat-expansion-panel>
+    </mat-expansion-panel> -->
 </mat-accordion>
 </section>

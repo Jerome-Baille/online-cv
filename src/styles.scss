@@ -44,6 +44,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
         & img {
             max-height: 250px;
+            max-width: 100%;
         }
     }
 
@@ -242,4 +243,20 @@ figure {
 
 .mat-expansion-panel-body {
     padding: 0 !important;
+}
+
+.pipe-divider {
+    padding:0 5px;
+}
+
+.btn-lang__container {
+    text-align: end;
+
+    & button {
+        font-size: 1rem;
+    }
+
+    & span {
+        color: #335384;
+    }
 }

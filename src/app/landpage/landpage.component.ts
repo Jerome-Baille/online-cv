@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faHeart, faRocket } from '@fortawesome/free-solid-svg-icons';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-landpage',
@@ -7,6 +8,7 @@ import { faHeart, faRocket } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./landpage.component.scss']
 })
 export class LandpageComponent implements OnInit {
+  lang: any = 'en';
   faRocket = faRocket;
   faHeart = faHeart;
 
@@ -19,9 +21,19 @@ export class LandpageComponent implements OnInit {
 
   windowScrolled = false;
 
-  constructor() { }
+  constructor(
+    public translate: TranslateService
+  ) { }
 
   ngOnInit(): void {
+    // check if there is a key "lang" in localStorage
+    if(localStorage.getItem('lang')) {
+      this.lang = localStorage.getItem('lang');
+    } else {
+      this.lang = navigator.language;
+    }
+
+
     window.addEventListener('scroll', () => {
       this.windowScrolled = window.pageYOffset !== 0;
     });
@@ -92,6 +104,20 @@ export class LandpageComponent implements OnInit {
       this.kanap = false;
       this.piiquante = false;
       this.groupomania = false;
+    }
+  }
+
+  changeLang(lang: string) {
+    switch (lang) {
+      case 'fr':
+        this.lang = 'fr';
+        localStorage.setItem('lang', 'fr');
+        break;
+      case 'en':
+        this.lang = 'en';
+        // this.translate.use(lang)
+        localStorage.setItem('lang', 'en');
+        break;
     }
   }
 }

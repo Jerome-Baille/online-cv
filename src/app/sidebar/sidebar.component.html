@@ -1,5 +1,5 @@
 <div class="profile-container">
-    <img src="assets/DSC_0703_2.JPG" alt="Profile picture" class="profile-container__picture">
+    <img src="../../assets/profile-picture.JPG" alt="Profile picture" class="profile-container__picture">
 </div>
 <section class="contact-container">
     <h2 class="contact-container__title">Contact</h2>
@@ -28,28 +28,24 @@
 <section class="competences-container">
     <h2 class="competences-container__title">Hard skills</h2>
 
-    <h4 class="competences-container__hard-skills__title">Frontend</h4>
-    <p class="competences-container__hard-skills__element mb-0">Angular 13 | HTML 5 | CSS 3</p>
+    <h4 class="competences-container__hard-skills__title">Front-end</h4>
+    <p class="competences-container__hard-skills__element mb-0">Angular 13 | Django | HTML 5 | CSS 3</p>
     <p class="competences-container__hard-skills__element">Sass | Bootstrap 5 | Angular Material</p>
 
-    <h4 class="competences-container__hard-skills__title">Backend</h4>
-    <p class="competences-container__hard-skills__element">JavaScript | NodeJS | Express | NPM</p>
+    <h4 class="competences-container__hard-skills__title">Back-end</h4>
+    <p class="competences-container__hard-skills__element">JavaScript | NodeJS | Express | Python</p>
 
-    <h4 class="competences-container__hard-skills__title">Base de données</h4>
-    <p class="competences-container__hard-skills__element">SQL | MySQL | MongoDB</p>
+    <h4 class="competences-container__hard-skills__title">{{ lang== 'fr'? "Base de données" : "DataBase"}}</h4>
+    <p class="competences-container__hard-skills__element">SQL | MySQL | PostgreSQL | MongoDB</p>
 
-    <h4 class="competences-container__hard-skills__title">Tools</h4>
+    <h4 class="competences-container__hard-skills__title">{{ lang== 'fr'? "Outils" : "Tools" }}</h4>
     <p class="competences-container__hard-skills__element">Git | Github | Visual Studio Code</p>
 </section>
 
 <section class="competences-container">
     <h2 class="competences-container__title">Soft skills</h2>
     <ul class="competences-container__soft-skills">
-        <li>Calme</li>
-        <li>Curieux</li>
-        <li>Déterminé</li>
-        <li>Méthodique</li>
-        <li>Polyvalent</li>
+        <li *ngFor="let soft of softArray">{{ soft }}</li>
     </ul>
     <!-- <h2 class="competences-container__title">Compétences</h2>
     <ul>
@@ -84,16 +80,12 @@
 </section>
 
 <section class="languages-container">
-    <h2 class="languages-container__title">Langages</h2>
+    <h2 class="languages-container__title">{{ lang=='fr'? "Langages" : "Languages" }}</h2>
 
     <ul class="languages-container__list">
-        <li>
-            Français
-            <span class="detail-lang">(langue maternelle)</span>
-        </li>
-        <li>
-            Anglais
-            <span class="detail-lang">(Professionnel)</span>
+        <li *ngFor="let lang of langArray">
+            {{ lang.name}}
+            <span class="detail-lang">({{ lang.level }})</span>
         </li>
     </ul>
 </section>

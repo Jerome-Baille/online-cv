@@ -1,0 +1,20 @@
+<div *ngFor="let exp of experienceArray; last as isLast" class="experience__container">
+    <header class="experience__container__header">
+        <div class="experience__container__logo-container">
+            <img [src]="exp.logo" alt="{{ exp.altLogo }}">
+        </div>
+        <div>   
+            <h3 class="experience__container__title">{{ exp.position }}</h3>
+            <p class="experience__container__company">{{ exp.company }} <span class="pipe-divider">|</span> {{ exp.location }} <span class="pipe-divider">|</span> {{ exp.date }}</p>
+        </div>
+    </header>
+    <div *ngIf="exp.task" class="experience__container__body">
+        <ul class="experience__container__list">
+            <li *ngFor="let task of exp.task">
+                {{ task }}
+            </li>
+        </ul>
+    </div>
+
+    <div *ngIf="!isLast" class="divider div-transparent"></div>
+</div>

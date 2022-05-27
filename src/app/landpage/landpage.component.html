@@ -4,27 +4,35 @@
         <fa-icon [icon]="faRocket" class="rocket"></fa-icon>
     </button>
 
-    <app-sidebar class="sidebar-container"></app-sidebar>
+    <app-sidebar class="sidebar-container" [lang]="lang"></app-sidebar>
 
     <div class="main-container">
+        <div class="btn-lang__container">
+            <button mat-stroked-button (click)="changeLang('en')">EN</button>
+            <span class="pipe-divider">|</span>
+            <button mat-stroked-button (click)="changeLang('fr')">FR</button>
+        </div>
         <section class="main-container__header">
             <h1 class="main-container__title"><span class="main-container__title__underline">Jér</span>ôme Baille</h1>
-            <h2 class="main-container__subtitle">Développeur Web</h2>
+            <h2 class="main-container__subtitle">{{ lang== 'fr'? "Développeur Web" : "Web Developer" }}</h2>
         </section>
 
         <mat-tab-group mat-stretch-tabs>
             <mat-tab>
               <ng-template mat-tab-label>
-                <h2 class="main-container__h2">Projets</h2>
+                <h2 class="main-container__h2">{{ lang== 'fr'? "Projets" : "Projects" }}</h2>
               </ng-template>
-              <app-projects></app-projects>
+              <app-projects [lang]="lang"></app-projects>
             </mat-tab>
           
             <mat-tab>
               <ng-template mat-tab-label>
-                <h2 class="main-container__h2">Experience</h2>
+                <h2 class="main-container__h2">Experiences</h2>
               </ng-template>
-                <section class="experience">
+              <section class="experience">
+                  <app-experience [lang]="lang"></app-experience>
+              </section>
+                <!-- <section class="experience">
                 <div class="experience__container">
                     <header class="experience__container__header">
                         <div class="experience__container__logo-container">
@@ -88,14 +96,18 @@
                         </ul>
                     </div>
                 </div>
-                </section>
+                </section> -->
             </mat-tab>
           
             <mat-tab>
               <ng-template mat-tab-label>
                 <h2 class="main-container__h2">Education</h2>
               </ng-template>
-                <section class="education">    
+              <section class="education">
+                <app-education [lang]="lang"></app-education> 
+              </section>
+
+                <!-- <section class="education">   
                 <div class="education__container">
                     <header class="education__container__header">
                         <div class="education__container__logo-container">
@@ -176,7 +188,7 @@
                         </div>
                     </header>
                 </div>
-                </section>
+                </section> -->
             </mat-tab>
           </mat-tab-group>
     </div>

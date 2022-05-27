@@ -1,4 +1,5 @@
 .profile-container {
+    height: 291px;
     padding: 30px;
     text-align: center;
 
@@ -18,7 +19,7 @@
 }
 
 .contact-container, .competences-container, .languages-container {
-    padding: 30px;
+    padding: 15px 30px;
 
     &__title {
         font-family: 'Source Sans Pro', sans-serif;

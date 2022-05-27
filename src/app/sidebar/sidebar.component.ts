@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faLocationDot, faMapLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 
@@ -8,6 +8,11 @@ import { faEnvelope, faLocationDot, faMapLocationDot, faPhone } from '@fortaweso
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
+  @Input() lang!: string;
+
+  softArray: any = [];
+  langArray: any = [];
+
   faMapLocationDot = faMapLocationDot;
   faLocationDot = faLocationDot;
   faEnveloppe = faEnvelope;
@@ -18,6 +23,22 @@ export class SidebarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  ngOnChanges(): void {
+    if(this.lang === 'fr') {
+      fetch('./assets/i18n/fr.json').then(res => res.json())
+      .then(jsonData => {
+        this.softArray = jsonData.soft;
+        this.langArray = jsonData.lang;
+      });
+    } else {
+      fetch('./assets/i18n/en.json').then(res => res.json())
+      .then(jsonData => {
+        this.softArray = jsonData.soft;
+        this.langArray = jsonData.lang;
+      });
+    }
   }
 
 }

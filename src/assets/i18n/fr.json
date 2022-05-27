@@ -1,0 +1,481 @@
+{
+    "soft" : [
+        "Calme",
+        "Curieux",
+        "Déterminé",
+        "Méthodique",
+        "Polyvalent"
+    ],
+    "lang" : [
+            {
+                "name" : "Français",
+                "level" : "langue maternelle"
+            },
+            {
+                "name": "Anglais",
+                "level": "professionnel" 
+            }
+    ],
+    "projects": [
+        {
+            "trigger" : "bookiPanel",
+            "boolean": false,
+            "title" : "Booki : Transformation d'une maquette en site web responsive",
+            "competences" : [
+                "Intégrer du contenu conformément à une maquette","Implémenter une interface responsive"
+            ],
+            "badges1": [
+                {
+                    "src": "assets/badges/badge_HTML.svg",
+                    "alt": "badge HTML"
+                },
+                {
+                    "src": "assets/badges/badge_CSS.svg",
+                    "alt": "badge CSS"
+                }
+            ],
+            "badges2": [
+                {
+                    "src": "assets/badges/badge_Git.svg",
+                    "alt": "badge Git"
+                },
+                {
+                    "src": "assets/badges/badge_Github.svg",
+                    "alt": "badge Github"
+                }
+            ],
+            "logo": "assets/booki/booki-logo.png",
+            "altLogo": "Booki logo",
+            "description": "Booki est une petite entreprise proposant un outil de planification de vacances ! Son site permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance.",
+            "dialog": [
+                {
+                    "name": "bookiDesktop",
+                    "src": "assets/booki/booki-desktop-thumbnail.jpg",
+                    "alt": "Desktop template",
+                    "figcaption": "Booki - Maquette version Desktop"
+                },
+                {
+                    "name": "bookiMobile",
+                    "src": "assets/booki/booki-mobile-thumbnail.jpg",
+                    "alt": "Desktop template",
+                    "figcaption": "Booki - Mobile template"
+                }
+            ],
+            "github": "https://github.com/Jerome-Baille/JeromeBAILLE_19112021",
+            "demo": "https://jerome-baille.github.io/JeromeBAILLE_19112021/"
+        },
+        {
+            "trigger" : "ohMyFoodPanel",
+            "title" : "OhMyFood : Dynamisation d'une page web avec des animations CSS",
+            "competences" : [
+                "Mettre en œuvre des effets CSS graphiques avancés",
+                "Utiliser un système de gestion de versions pour le suivi du projet et son hébergement",
+                "Assurer la cohérence graphique d'un site web",
+                "Mettre en place son environnement Front-End",
+                "Mettre en place une structure de navigation pour un site web"
+            ],
+            "badges1": [
+                {
+                    "src": "assets/badges/badge_HTML.svg",
+                    "alt": "badge HTML"
+                },
+                {
+                    "src": "assets/badges/badge_CSS.svg",
+                    "alt": "badge CSS"
+                },
+                {
+                    "src": "assets/badges/badge_Sass.svg",
+                    "alt": "badge Sass"
+                }
+            ],
+            "badges2": [
+                {
+                    "src": "assets/badges/badge_Git.svg",
+                    "alt": "badge Git"
+                },
+                {
+                    "src": "assets/badges/badge_Github.svg",
+                    "alt": "badge Github"
+                }
+            ],
+            "logo": "assets/ohMyFood/ohmyfood-logo.png",
+            "altLogo": "OhMyFood logo",
+            "description": "Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration. L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. Finis, les temps d'attente au restaurant !",
+            "dialog": [
+                {
+                    "name": "ohMyFoodAccueil",
+                    "src": "assets/ohMyFood/ohmyfood-Accueil-thumbnail.jpg",
+                    "alt": "OhMyFood - Accueil",
+                    "figcaption": "Maquette OhMyFood - Accueil"
+                },
+                {
+                    "name": "ohMyFoodMenu",
+                    "src": "assets/ohMyFood/ohmyfood-Menu-À-la-française-thumbnail.jpg",
+                    "alt": "OhMyFood - Menu à la française",
+                    "figcaption": "Maquette OhMyFood - Menu à la française"
+                }
+            ],
+            "github": "https://github.com/Jerome-Baille/JeromeBaille_3_21102021",
+            "demo": "https://jerome-baille.github.io/JeromeBaille_3_21102021/"
+        },
+        {
+            "trigger" : "laChouetteAgencePanel",
+            "title" : "La Chouette Agence : Optimisation d'un site web existant",
+            "competences" : [
+                "Optimiser la taille et la vitesse d’un site web",
+                "Assurer l'accessibilité d'un site web",
+                "Optimiser le référencement d'un site web",
+                "Réaliser une recherche des bonnes pratiques en développement web",
+                "Écrire un code HTML et CSS maintenable"
+            ],
+            "badges1": [
+                {
+                    "src": "assets/badges/badge_SEO.svg",
+                    "alt": "badge SEO"
+                },
+                {
+                    "src": "assets/badges/badge_HTML.svg",
+                    "alt": "badge HTML"
+                },
+                {
+                    "src": "assets/badges/badge_CSS.svg",
+                    "alt": "badge CSS"
+                }
+            ],
+            "badges2": [
+                {
+                    "src": "assets/badges/badge_Git.svg",
+                    "alt": "badge Git"
+                },
+                {
+                    "src": "assets/badges/badge_Github.svg",
+                    "alt": "badge Github"
+                }
+            ],
+            "logo": "assets/laChouetteAgence/la-chouette-agence.png",
+            "altLogo": "La Chouette Agence logo",
+            "description": "La chouette agence est une grande agence de web design basée à Lyon. Suite à des problèmes de référencements, le site ne se trouvait qu'en deuxième page des moteurs de recherche. Une optimisation du SEO a donc été effectuée et une amélioration du code du site afin de corriger les erreurs d'affichage et d'améliorer l'accéssibilité du site.",
+            "dialog": [
+                {
+                    "name": "laChouetteAgenceAccueilOriginal",
+                    "src": "assets/laChouetteAgence/Accueil - original.jpeg",
+                    "alt": "La Chouette Agence - Accueil original",
+                    "figcaption": "La Chouette Agence - Version originale de la page d'accueil"
+                },
+                {
+                    "name": "laChouetteAgenceAccueilModified",
+                    "src": "assets/laChouetteAgence/Accueil - modified.jpeg",
+                    "alt": "La Chouette Agence - Accueil améliorée",
+                    "figcaption": "La Chouette Agence - Version améliorée de la page d'accueil"
+                },
+                {
+                    "name": "laChouetteAgenceContactOriginal",
+                    "src": "assets/laChouetteAgence/Contact - original.jpeg",
+                    "alt": "La Chouette Agence - Page Contact originale",
+                    "figcaption": "La Chouette Agence - Version originale de la page Contact"
+                },
+                {
+                    "name": "laChouetteAgenceContactModified",
+                    "src": "assets/laChouetteAgence/Contact - modified.jpeg",
+                    "alt": "La Chouette Agence - Page Contact améliorée",
+                    "figcaption": "La Chouette Agence - Version améliorée de la page Contact"
+                }
+            ],
+            "github": "https://github.com/Jerome-Baille/JeromeBaille_4_09122021",
+            "demo": "https://jerome-baille.github.io/JeromeBaille_4_09122021/"
+        },
+        {
+            "trigger" : "kanapPanel",
+            "title" : "Kanap : Construction d'un site e-commerce en JavaScript",
+            "competences" : [
+                "Valider des données issues de sources externes",
+                "Gérer des événements JavaScript",
+                "Créer un plan de test pour une application",
+                "Interagir avec un web service avec JavaScript"
+            ],
+            "badges1": [
+                {
+                    "src": "assets/badges/badge_JavaScript.svg",
+                    "alt": "badge JavaScript"
+                },
+                {
+                    "src": "assets/badges/badge_Git.svg",
+                    "alt": "badge Git"
+                },
+                {
+                    "src": "assets/badges/badge_Github.svg",
+                    "alt": "badge Github"
+                }
+            ],
+            "logo": "assets/kanap/logo.png",
+            "altLogo": "Kanap logo",
+            "description": "Kanap est une marque de canapés qui vend ses produits depuis sa boutique exclusivement. Aujourd’hui, celle-ci souhaitait avoir une plateforme de e-commerce en plus de sa boutique physique pour vendre ses produits sur Internet.",
+            "dialog": [
+                {
+                    "name": "kanapListOfProducts",
+                    "src": "assets/kanap/list-of-products.jpeg",
+                    "alt": "Kanap - Liste des produits",
+                    "figcaption": "Kanap - Liste des produits"
+                },
+                {
+                    "name": "kanapSinglePage",
+                    "src": "assets/kanap/single-product-page.jpeg",
+                    "alt": "Kanap - Page d'un produit",
+                    "figcaption": "Kanap - Page d'un produit"
+                },
+                {
+                    "name": "kanapCart",
+                    "src": "assets/kanap/cart.jpeg",
+                    "alt": "Kanap - Panier",
+                    "figcaption": "Kanap - Panier"
+                },
+                {
+                    "name": "kanapOrderConfirmation",
+                    "src": "assets/kanap/order-number.jpeg",
+                    "alt": "Kanap - Confirmation de commande",
+                    "figcaption": "Kanap - Confirmation de commande"
+                }
+            ],
+            "github": "https://github.com/Jerome-Baille/JeromeBaille_5_03012022"
+        },
+        {
+            "trigger" : "piiquantePanel",
+            "title" : "Piiquante : Construction d'une API pour une app d'avis gastronomiques",
+            "competences" : [
+                "Implémenter un modèle logique de données conformément à la réglementation",
+                "Mettre en œuvre des opérations CRUD de manière sécurisée",
+                "Stocker des données de manière sécurisée"
+            ],
+            "badges1": [
+                {
+                    "src": "assets/badges/badge_NodeJs.svg",
+                    "alt": "badge NodeJS"
+                },
+                {
+                    "src": "assets/badges/badge_Express.svg",
+                    "alt": "badge Express"
+                },
+                {
+                    "src": "assets/badges/badge_MongoDB.svg",
+                    "alt": "badge MongoDB"
+                }
+            ],
+            "badges2": [
+                {
+                    "src": "assets/badges/badge_Git.svg",
+                    "alt": "badge Git"
+                },
+                {
+                    "src": "assets/badges/badge_Github.svg",
+                    "alt": "badge Github"
+                }
+            ],
+            "logo": "assets/piiquante/piiquanteLogo.png",
+            "altLogo": "Piiquante logo",
+            "description": "Piiquante est une société de sauce piquante qui veut développer une application web de critique des sauces piquantes appelée 'Hot Takes'. Si la responsable produit de Piiquante souhaite à terme transformer l'application d'évaluation en une boutique en ligne, elle souhaite que la première version soit une « galerie de sauces » permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent.",
+            "dialog": [
+                {
+                    "name": "piiquanteRegister",
+                    "src": "assets/piiquante/piiquante-register.jpeg",
+                    "alt": "Piiquante - Inscription",
+                    "figcaption": "Piiquante - Inscription"
+                },
+                {
+                    "name": "piiquanteListOfProducts",
+                    "src": "assets/piiquante/piiquante-list-sauces.jpeg",
+                    "alt": "Piiquante - Liste des sauces",
+                    "figcaption": "Piiquante - Liste des sauces"
+                },
+                {
+                    "name": "piiquanteSinglePage",
+                    "src": "assets/piiquante/piiquante-single-page.jpeg",
+                    "alt": "Piiquante - Page d'une sauce",
+                    "figcaption": "Piiquante - Page d'une sauce"
+                },
+                {
+                    "name": "piiquanteNewSauce",
+                    "src": "assets/piiquante/piiquante-create-new-sauce.jpeg",
+                    "alt": "Piiquante - Création d'une sauce",
+                    "figcaption": "Piiquante - Création d'une sauce"
+                }
+            ],
+            "github": "https://github.com/Jerome-Baille/JeromeBaille_6_24012022"
+        },
+        {
+            "trigger" : "piiquantePanel",
+            "title" : "Groupomania : Création d'un réseau social d'entreprise",
+            "competences" : [
+                "Authentifier un utilisateur et maintenir sa session",
+                "Gérer un stockage de données à l'aide de SQL",
+                "Implémenter un stockage de données sécurisé en utilisant SQL",
+                "Personnaliser le contenu envoyé à un client web"
+            ],
+            "badges1": [
+                {
+                    "src": "assets/badges/badge_Angular.svg",
+                    "alt": "badge Angular"
+                },
+                {
+                    "src": "assets/badges/badge_Sass.svg",
+                    "alt": "badge Sass"
+                }
+            ],
+            "badges2": [
+                {
+                    "src": "assets/badges/badge_NodeJs.svg",
+                    "alt": "badge NodeJS"
+                },
+                {
+                    "src": "assets/badges/badge_Express.svg",
+                    "alt": "badge Express"
+                },
+                {
+                    "src": "assets/badges/badge_MySQL.svg",
+                    "alt": "badge MySQL"
+                }
+            ],
+            "badges3": [
+                {
+                    "src": "assets/badges/badge_Git.svg",
+                    "alt": "badge Git"
+                },
+                {
+                    "src": "assets/badges/badge_Github.svg",
+                    "alt": "badge Github"
+                }
+            ],
+            "logo": "assets/groupomania/icon-above-font.png",
+            "altLogo": "groupomania logo",
+            "description": "Groupomania est un groupe spécialisé dans la grande distribution. Le projet consiste à construire un réseau social interne pour les employés de Groupomania. Le but de cet outil est de faciliter les interactions entre collègues.",
+            "dialog": [
+                {
+                    "name": "groupomaniaIndex",
+                    "src": "assets/groupomania/groupomania-landpage.jpeg",
+                    "alt": "Ggroupomania - Page d'accueil",
+                    "figcaption": "Groupomania - Page d'accueil"
+                },
+                {
+                    "name": "groupomaniaListOfPosts",
+                    "src": "assets/groupomania/groupomania-post-list.jpeg",
+                    "alt": "Groupomania - Liste des posts",
+                    "figcaption": "Groupomania - Liste des posts"
+                },
+                {
+                    "name": "groupomaniaSinglePage",
+                    "src": "assets/groupomania/groupomania-single-page.jpeg",
+                    "alt": "Groupomania - Page d'un post",
+                    "figcaption": "Groupomania - Page d'un post"
+                },
+                {
+                    "name": "groupomaniaProfile",
+                    "src": "assets/groupomania/groupomania-profile.jpeg",
+                    "alt": "Groupomania - Page de profil",
+                    "figcaption": "Groupomania - Page de profil"
+                },
+                {
+                    "name": "groupomaniaAdmin",
+                    "src": "assets/groupomania/groupomania-admin-dashboard.jpeg",
+                    "alt": "Groupomania - Page d'administration",
+                    "figcaption": "Groupomania - Page d'administration"
+                }
+            ],
+            "github": "https://github.com/Jerome-Baille/JeromeBaille_7_23022022"
+        }
+    ],
+    "experience": [
+        {
+            "id": 1,
+            "logo": "",
+            "position": "Aide à domicile (bénévole)",
+            "company": "Proche aidant",
+            "location": "le Grau-du-Roi",
+            "date": "2017 - 2020"
+        },
+        {
+            "id": 2,
+            "logo": "assets/experience/Logo_CA.png",
+            "altLogo": "Logo Crédit Agricole du Languedoc",
+            "position": "Assistant de fonctionnement d'agence",
+            "company": "Crédit Agricole du Languedoc",
+            "location": "Nîmes",
+            "date": "2015 - 2016",
+            "task" : [            
+                "Accueil des clients et vente des différents produits",
+                "Prise de rendez-vous auprès des conseillers",
+                "Gestion de la conformité",
+                "Gestion des opérations courantes (dépôts, retraits et virement)",
+                "Gestion des espèces et des distributeurs automatiques"
+            ]
+        },
+        {
+            "id": 3,
+            "logo": "assets/experience/Logo_BP-du-sud.jpg",
+            "altLogo": "Logo Banque Populaire du Sud",
+            "position": "Auxiliaire d'accueil<",
+            "company": "Banque Populaire du sud",
+            "location": "Nîmes",
+            "date": "2013 et 2014",
+            "task": [
+                "Accueil du public au sein de l’agence et par téléphone",
+                "Prise de rendez-vous auprès des conseillers",
+                "Identification des besoins des clients et présentations des produits répondant à leurs attentes",
+                "Gestion des opérations courantes (dépôts, retraits et virements)",
+                "Gestion des différents documents et produits (chéquiers, cartes bancaires…) à délivrer aux clients après vérification de leur identité",
+                "Gestion du courrier "
+            ]
+        }
+    ],
+    "education": 
+        [
+            {
+                "id" : 1,
+                "logo" : "assets/education/Logo_OpenClassrooms.png",
+                "altLogo" : "Logo OpenClassrooms",
+                "title" : "Développeur Web (titre RNCP niveau 5)",
+                "school" : "OpenClassrooms",
+                "location" : "Paris",
+                "date" : "2022"
+            },
+            {
+                "id" : 2,
+                "logo" : "assets/education/Logo_Paul-Valery_Montpellier-3.jpg",
+                "altLogo" : "Logo Université Paul Valéry",
+                "title" : "Master en Littérature et Civilisation Etrangère et Regionale, spécialité Anglais",
+                "school" : "Université Paul Valéry",
+                "location" : "Montpellier 3",
+                "date" : "2013",
+                "description" : "Obtention d’un master suite à la soutenance de mémoires centrés sur le théâtre post-moderniste au Royaume-Uni.",
+                "listItems" : [
+                    "The skirmish of wit : Analyse de la folie dans les pièces Waiting for Godot de Samuel Becket et The Caretaker d’Harold Pinter",
+                    "A mind in chaos suspected of genius : Folie et mathématiques dans Hamlet et King Lear de William Shakespeare, En attendant Godot de Samuel Beckett et Rosencrantz & Guildenstern are dead de Tom Stoppard"
+                ]
+            },
+            {
+                "id" : 3,
+                "logo" : "assets/education/Logo_Unimes.jpg",
+                "altLogo" : "Logo Université de Nimes",
+                "title" : "Licence en Littérature et Civilisation Etrangère, études Anglophone",
+                "school" : "Université Vauban",
+                "location" : "Nîmes",
+                "date" : "2011"
+            },
+            {
+                "id" : 4,
+                "logo" : "assets/education/Logo_Dhuoda.jpg",
+                "altLogo" : "Logo Lycée Dhuoda",
+                "title" : "Classe préparatoire aux grandes écoles : Physique, Technologie et Sciences de l’ingénieur",
+                "school" : "Lycée Dhuoda",
+                "location" : "Nîmes",
+                "date" : "2008"
+            },
+            {
+                "id" : 5,
+                "logo" : "assets/education/Logo_Dhuoda.jpg",
+                "altLogo" : "Logo Lycée Dhuoda",
+                "title" : "Baccalauréat Scientifique, option Sciences de l’ingénieur, spécialité Mathématiques",
+                "school" : "Lycée Dhuoda",
+                "location" : "Nîmes",
+                "date" : "2007"
+            }
+        ]
+}

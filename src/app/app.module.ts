@@ -15,11 +15,22 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ProjectsComponent, 
   bookiDesktop, bookiMobile, 
+  ohMyFoodAccueil, ohMyFoodMenu,
   laChouetteAgenceAccueilOriginal, laChouetteAgenceAccueilModified, laChouetteAgenceContactOriginal, laChouetteAgenceContactModified,
   kanapListOfProducts, kanapSinglePage, kanapCart, kanapOrderConfirmation,
   piiquanteRegister, piiquanteListOfSauces, piiquanteSinglePage, piiquanteNewSauce,
   groupomaniaIndex, groupomaniaSinglePage, groupomaniaProfile, groupomaniaListOfPosts, groupomaniaAdmin
 } from './projects/projects.component';
+import { EducationComponent } from './education/education.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+// Factory function required during AOT compilation
+export function httpTranslateLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -29,6 +40,8 @@ import { ProjectsComponent,
     ProjectsComponent,
     bookiMobile,
     bookiDesktop,
+    ohMyFoodAccueil, 
+    ohMyFoodMenu,
     laChouetteAgenceAccueilOriginal, 
     laChouetteAgenceAccueilModified, 
     laChouetteAgenceContactOriginal, 
@@ -45,7 +58,7 @@ import { ProjectsComponent,
     groupomaniaSinglePage, 
     groupomaniaProfile, 
     groupomaniaListOfPosts, 
-    groupomaniaAdmin
+    groupomaniaAdmin, EducationComponent, ExperienceComponent
 
   ],
   imports: [
@@ -58,7 +71,15 @@ import { ProjectsComponent,
     MatTabsModule,
     MatIconModule,
     MatProgressBarModule,
-    MatExpansionModule
+    MatExpansionModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpTranslateLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
