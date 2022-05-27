@@ -1,0 +1,483 @@
+{
+    "soft" : [
+            "Calm",
+            "Curious",
+            "Determined",
+            "Methodical",
+            "Flexible"
+    ],
+    "lang" : [
+        {
+            "name" : "French",
+            "level" : "mother tongue"
+        },
+        {
+            "name": "English",
+            "level": "professional" 
+        }
+    ],
+    "projects": [
+        {
+            "trigger" : "bookiPanel",
+            "boolean": false,
+            "title" : "Booki : Transformation of a template into a responsive website",
+            "competences" : [
+                "Integrate content according to a template", 
+                "Implement a responsive interface"
+            ],
+            "badges1": [
+                {
+                    "src": "assets/badges/badge_HTML.svg",
+                    "alt": "badge HTML"
+                },
+                {
+                    "src": "assets/badges/badge_CSS.svg",
+                    "alt": "badge CSS"
+                }
+            ],
+            "badges2": [
+                {
+                    "src": "assets/badges/badge_Git.svg",
+                    "alt": "badge Git"
+                },
+                {
+                    "src": "assets/badges/badge_Github.svg",
+                    "alt": "badge Github"
+                }
+            ],
+            "logo": "assets/booki/booki-logo.png",
+            "altLogo": "Booki logo",
+            "description": "Booki is a small company offering a vacation planning tool! Its website allows users to find accommodations and activities in the city of their choice. Accommodations can also be filtered by theme, such as budget or ambiance.",
+            "dialog": [
+                {
+                    "name": "bookiDesktop",
+                    "src": "assets/booki/booki-desktop-thumbnail.jpg",
+                    "alt": "Booki - Desktop Template",
+                    "figcaption": "Booki - Desktop Template"
+                },
+                {
+                    "name": "bookiMobile",
+                    "src": "assets/booki/booki-mobile-thumbnail.jpg",
+                    "alt": "Booki - Mobile template",
+                    "figcaption": "Booki - Mobile template"
+                }
+            ],
+            "github": "https://github.com/Jerome-Baille/JeromeBAILLE_19112021",
+            "demo": "https://jerome-baille.github.io/JeromeBAILLE_19112021/"
+        },
+        {
+            "trigger" : "ohMyFoodPanel",
+            "title" : "OhMyFood : Dynamizing a web page with CSS animations",
+            "competences" : [
+                "Implementing advanced graphic CSS effects",
+                "Using a version management system for project tracking and hosting",
+                "Ensuring the graphic coherence of a website",
+                "Setting up a Front-End environment",
+                "Setting up a navigation structure for a website", 
+                "Using a version management system for project monitoring and hosting"
+            ],
+            "badges1": [
+                {
+                    "src": "assets/badges/badge_HTML.svg",
+                    "alt": "badge HTML"
+                },
+                {
+                    "src": "assets/badges/badge_CSS.svg",
+                    "alt": "badge CSS"
+                },
+                {
+                    "src": "assets/badges/badge_Sass.svg",
+                    "alt": "badge Sass"
+                }
+            ],
+            "badges2": [
+                {
+                    "src": "assets/badges/badge_Git.svg",
+                    "alt": "badge Git"
+                },
+                {
+                    "src": "assets/badges/badge_Github.svg",
+                    "alt": "badge Github"
+                }
+            ],
+            "logo": "assets/ohMyFood/ohmyfood-logo.png",
+            "altLogo": "OhMyFood logo",
+            "description": "Ohmyfood! is a young startup that would like to impose itself on the restaurant market. The objective is to develop a 100% mobile website that lists the menus of gourmet restaurants. In addition to the classic reservation systems, customers will be able to compose the menu of their meal so that the dishes are ready when they arrive. No more waiting in restaurants!",
+            "dialog": [
+                {
+                    "name": "ohMyFoodAccueil",
+                    "src": "assets/ohMyFood/ohmyfood-Accueil-thumbnail.jpg",
+                    "alt": "OhMyFood - Index",
+                    "figcaption": "OhMyFood - Index"
+                },
+                {
+                    "name": "ohMyFoodMenu",
+                    "src": "assets/ohMyFood/ohmyfood-Menu-À-la-française-thumbnail.jpg",
+                    "alt": "OhMyFood - Menu Example",
+                    "figcaption": "OhMyFood - Menu Example"
+                }
+            ],
+            "github": "https://github.com/Jerome-Baille/JeromeBaille_3_21102021",
+            "demo": "https://jerome-baille.github.io/JeromeBaille_3_21102021/"
+        },
+        {
+            "trigger" : "laChouetteAgencePanel",
+            "title" : "La Chouette Agence : Optimization of an existing website",
+            "competences" : [
+                "Optimizing the size and speed of a website",
+                "Ensuring the accessibility of a website",
+                "Optimizing the referencing of a website",
+                "Researching best practices in web development",
+                "Writing maintainable HTML and CSS code"
+            ],
+            "badges1": [
+                {
+                    "src": "assets/badges/badge_SEO.svg",
+                    "alt": "badge SEO"
+                },
+                {
+                    "src": "assets/badges/badge_HTML.svg",
+                    "alt": "badge HTML"
+                },
+                {
+                    "src": "assets/badges/badge_CSS.svg",
+                    "alt": "badge CSS"
+                }
+            ],
+            "badges2": [
+                {
+                    "src": "assets/badges/badge_Git.svg",
+                    "alt": "badge Git"
+                },
+                {
+                    "src": "assets/badges/badge_Github.svg",
+                    "alt": "badge Github"
+                }
+            ],
+            "logo": "assets/laChouetteAgence/la-chouette-agence.png",
+            "altLogo": "La Chouette Agence logo",
+            "description": "La chouette agence is a large web design agency based in Lyon, France. Due to SEO problems, the website was only on the second page of search engines. An SEO optimization was therefore performed and an improvement of the website's code in order to correct the display errors and improve the website's accessibility.",
+            "dialog": [
+                {
+                    "name": "laChouetteAgenceAccueilOriginal",
+                    "src": "assets/laChouetteAgence/Accueil - original.jpeg",
+                    "alt": "La Chouette Agence - Original Index",
+                    "figcaption": "La Chouette Agence - Original Index"
+                },
+                {
+                    "name": "laChouetteAgenceAccueilModified",
+                    "src": "assets/laChouetteAgence/Accueil - modified.jpeg",
+                    "alt": "La Chouette Agence - Improved Index",
+                    "figcaption": "La Chouette Agence - Improved Index"
+                },
+                {
+                    "name": "laChouetteAgenceContactOriginal",
+                    "src": "assets/laChouetteAgence/Contact - original.jpeg",
+                    "alt": "La Chouette Agence - Original Contact page",
+                    "figcaption": "La Chouette Agence - Original Contact page"
+                },
+                {
+                    "name": "laChouetteAgenceContactModified",
+                    "src": "assets/laChouetteAgence/Contact - modified.jpeg",
+                    "alt": "La Chouette Agence - Improved Contact page",
+                    "figcaption": "La Chouette Agence - Improved Contact page"
+                }
+            ],
+            "github": "https://github.com/Jerome-Baille/JeromeBaille_4_09122021",
+            "demo": "https://jerome-baille.github.io/JeromeBaille_4_09122021/"
+        },
+        {
+            "trigger" : "kanapPanel",
+            "title" : "Kanap : Building an e-commerce website in JavaScript",
+            "competences" : [
+                "Validating data from external sources",
+                "Managing JavaScript events",
+                "Creating a test plan for an application",
+                "Interacting with a web service using JavaScript"
+            ],
+            "badges1": [
+                {
+                    "src": "assets/badges/badge_JavaScript.svg",
+                    "alt": "badge JavaScript"
+                },
+                {
+                    "src": "assets/badges/badge_Git.svg",
+                    "alt": "badge Git"
+                },
+                {
+                    "src": "assets/badges/badge_Github.svg",
+                    "alt": "badge Github"
+                }
+            ],
+            "logo": "assets/kanap/logo.png",
+            "altLogo": "Kanap logo",
+            "description": "Kanap is a sofa brand that sells its products exclusively from its store. Today, the company wanted to have an e-commerce platform in addition to its physical store to sell its products on the Internet.",
+            "dialog": [
+                {
+                    "name": "kanapListOfProducts",
+                    "src": "assets/kanap/list-of-products.jpeg",
+                    "alt": "Kanap - List of products",
+                    "figcaption": "Kanap - List of products"
+                },
+                {
+                    "name": "kanapSinglePage",
+                    "src": "assets/kanap/single-product-page.jpeg",
+                    "alt": "Kanap - Single product page",
+                    "figcaption": "Kanap - Single product page"
+                },
+                {
+                    "name": "kanapCart",
+                    "src": "assets/kanap/cart.jpeg",
+                    "alt": "Kanap - Cart",
+                    "figcaption": "Kanap - Cart"
+                },
+                {
+                    "name": "kanapOrderConfirmation",
+                    "src": "assets/kanap/order-number.jpeg",
+                    "alt": "Kanap - Order confirmation",
+                    "figcaption": "Kanap - Order confirmation"
+                }
+            ],
+            "github": "https://github.com/Jerome-Baille/JeromeBaille_5_03012022"
+        },
+        {
+            "trigger" : "piiquantePanel",
+            "title" : "Piiquante : Building an API for a food review app",
+            "competences" : [
+                "Implement a logical data model in accordance with regulations",
+                "Implement CRUD operations in a secure manner",
+                "Store data in a secure manner"
+            ],
+            "badges1": [
+                {
+                    "src": "assets/badges/badge_NodeJs.svg",
+                    "alt": "badge NodeJS"
+                },
+                {
+                    "src": "assets/badges/badge_Express.svg",
+                    "alt": "badge Express"
+                },
+                {
+                    "src": "assets/badges/badge_MongoDB.svg",
+                    "alt": "badge MongoDB"
+                }
+            ],
+            "badges2": [
+                {
+                    "src": "assets/badges/badge_Git.svg",
+                    "alt": "badge Git"
+                },
+                {
+                    "src": "assets/badges/badge_Github.svg",
+                    "alt": "badge Github"
+                }
+            ],
+            "logo": "assets/piiquante/piiquanteLogo.png",
+            "altLogo": "Piiquante logo",
+            "description": "Piiquante is a hot sauce company that wants to develop a hot sauce review web application called 'Hot Takes'. While Piiquante's product manager hopes to eventually turn the review application into an online store, she wants the first version to be a 'sauce gallery' that allows users to upload their favorite hot sauces and to like or dislike the sauces that others share.",
+            "dialog": [
+                {
+                    "name": "piiquanteRegister",
+                    "src": "assets/piiquante/piiquante-register.jpeg",
+                    "alt": "Piiquante - Register",
+                    "figcaption": "Piiquante - Register"
+                },
+                {
+                    "name": "piiquanteListOfProducts",
+                    "src": "assets/piiquante/piiquante-list-sauces.jpeg",
+                    "alt": "Piiquante - List of sauces",
+                    "figcaption": "Piiquante - List of sauces"
+                },
+                {
+                    "name": "piiquanteSinglePage",
+                    "src": "assets/piiquante/piiquante-single-page.jpeg",
+                    "alt": "Piiquante - Single sauce page",
+                    "figcaption": "Piiquante - Single sauce page"
+                },
+                {
+                    "name": "piiquanteNewSauce",
+                    "src": "assets/piiquante/piiquante-create-new-sauce.jpeg",
+                    "alt": "Piiquante - Create new sauce",
+                    "figcaption": "Piiquante - Create new sauce"
+                }
+            ],
+            "github": "https://github.com/Jerome-Baille/JeromeBaille_6_24012022"
+        },
+        {
+            "trigger" : "piiquantePanel",
+            "title" : "Groupomania : Creation of a company social network",
+            "competences" : [
+                "Authenticating a user and maintaining their session",
+                "Managing a data store using SQL",
+                "Implementing secure data storage using SQL",
+                "Customize the content sent to a web client"
+            ],
+            "badges1": [
+                {
+                    "src": "assets/badges/badge_Angular.svg",
+                    "alt": "badge Angular"
+                },
+                {
+                    "src": "assets/badges/badge_Sass.svg",
+                    "alt": "badge Sass"
+                }
+            ],
+            "badges2": [
+                {
+                    "src": "assets/badges/badge_NodeJs.svg",
+                    "alt": "badge NodeJS"
+                },
+                {
+                    "src": "assets/badges/badge_Express.svg",
+                    "alt": "badge Express"
+                },
+                {
+                    "src": "assets/badges/badge_MySQL.svg",
+                    "alt": "badge MySQL"
+                }
+            ],
+            "badges3": [
+                {
+                    "src": "assets/badges/badge_Git.svg",
+                    "alt": "badge Git"
+                },
+                {
+                    "src": "assets/badges/badge_Github.svg",
+                    "alt": "badge Github"
+                }
+            ],
+            "logo": "assets/groupomania/icon-above-font.png",
+            "altLogo": "groupomania logo",
+            "description": "Groupomania is a group specialized in mass distribution. The project consists in building an internal social network for the employees of Groupomania. The goal of this tool is to facilitate interactions between colleagues.",
+            "dialog": [
+                {
+                    "name": "groupomaniaIndex",
+                    "src": "assets/groupomania/groupomania-landpage.jpeg",
+                    "alt": "Ggroupomania - Index",
+                    "figcaption": "Groupomania - Index"
+                },
+                {
+                    "name": "groupomaniaListOfPosts",
+                    "src": "assets/groupomania/groupomania-post-list.jpeg",
+                    "alt": "Groupomania - Posts List",
+                    "figcaption": "Groupomania - Posts List"
+                },
+                {
+                    "name": "groupomaniaSinglePage",
+                    "src": "assets/groupomania/groupomania-single-page.jpeg",
+                    "alt": "Groupomania - Single page",
+                    "figcaption": "Groupomania - Single page"
+                },
+                {
+                    "name": "groupomaniaProfile",
+                    "src": "assets/groupomania/groupomania-profile.jpeg",
+                    "alt": "Groupomania - Profile",
+                    "figcaption": "Groupomania - Profile"
+                },
+                {
+                    "name": "groupomaniaAdmin",
+                    "src": "assets/groupomania/groupomania-admin-dashboard.jpeg",
+                    "alt": "Groupomania - Admin dashboard",
+                    "figcaption": "Groupomania - Admin dashboard"
+                }
+            ],
+            "github": "https://github.com/Jerome-Baille/JeromeBaille_7_23022022"
+        }
+    ],
+    "experience": [
+        {
+            "id": 1,
+            "position": "Homecare (volunteer)",
+            "company": "Family caregiver",
+            "location": "le Grau-du-Roi, FRANCE",
+            "date": "2017 - 2020"
+        },
+        {
+            "id": 2,
+            "logo": "assets/experience/Logo_CA.png",
+            "altLogo": "Logo Crédit Agricole du Languedoc",
+            "position": "Agency Operations Assistant",
+            "company": "Crédit Agricole du Languedoc",
+            "location": "Nîmes, FRANCE",
+            "date": "2015 - 2016",
+            "task" : [            
+                "Welcoming customers and selling different products",
+                "Making appointments with financial advisors",
+                "Compliance management",
+                "Management of daily operations (deposits, withdrawals and transfers)",
+                "Cash and ATM management"
+            ]
+        },
+        {
+            "id": 3,
+            "logo": "assets/experience/Logo_BP-du-sud.jpg",
+            "altLogo": "Logo Banque Populaire du Sud",
+            "position": "Receptionist",
+            "company": "Banque Populaire du sud",
+            "location": "Nîmes, FRANCE",
+            "date": "2013 et 2014",
+            "task": [
+                "Welcoming the public in the agency and by phone",
+                "Making appointments with advisors",
+                "Identification of customer needs and presentation of products that meet their expectations",
+                "Management of daily operations (deposits, withdrawals and transfers)",
+                "Management of the various documents and products (checkbooks, bank cards...) to be issued to customers after verification of their identity",
+                "Management of the mail received by the agency"
+            ]
+        }
+    ],
+    "education": 
+        [
+            {
+                "id": 1,
+                "logo" : "assets/education/Logo_OpenClassrooms.png",
+                "altLogo" : "Logo OpenClassrooms",
+                "title" : "Web Development postgraduation",
+                "school" : "OpenClassrooms",
+                "location" : "Paris, FRANCE",
+                "date" : "2022"
+            },
+            {
+                "id" : 2,
+                "logo" : "assets/education/Logo_Paul-Valery_Montpellier-3.jpg",
+                "altLogo" : "Logo Université Paul Valéry",
+                "title" : "Master's degree in English Literature and Civilization",
+                "school" : "University Paul Valéry",
+                "location" : "Montpellier, FRANCE",
+                "date" : "2013",
+                "description" : "My master's degree thesis were focused on post-modernist theater in the United Kingdom.",
+                "listItems" : [
+                    "The skirmish of wit : Analysis of madness in the plays 'Waiting for Godot' by Samuel Becket and 'The Caretaker' by Harold Pinter",
+                    "A mind in chaos suspected of genius : Madness and mathematics in William Shakespeare's 'Hamlet' and 'King Lear', Samuel Beckett's 'Waiting for Godot' and Tom Stoppard's 'Rosencrantz & Guildenstern are dead'"
+                ]
+            },
+            {
+                "id" : 3,
+                "logo" : "assets/education/Logo_Unimes.jpg",
+                "altLogo" : "Logo Université de Nimes",
+                "title" : "Bachelor's degree in English Literature and Civilization,",
+                "school" : "Université Vauban",
+                "location" : "Nîmes, FRANCE",
+                "date" : "2011"
+            },
+            {
+                "id" : 4,
+                "logo" : "assets/education/Logo_Dhuoda.jpg",
+                "altLogo" : "Logo Lycée Dhuoda",
+                "title" : "Preparatory class for ingineering schools: Physics, Technology and Engineering Sciences",
+                "school" : "Dhuoda High School",
+                "location" : "Nîmes, FRANCE",
+                "date" : "2008"
+            },
+            {
+                "id" : 5,
+                "logo" : "assets/education/Logo_Dhuoda.jpg",
+                "altLogo" : "Logo Lycée Dhuoda",
+                "title" : "Baccalauréat Scientifique, option Sciences de l’ingénieur, spécialité Mathématiques",
+                "school" : "Lycée Dhuoda",
+                "location" : "Nîmes",
+                "date" : "2007"
+            }
+        ]
+    
+}
