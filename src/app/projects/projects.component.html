@@ -1,5 +1,5 @@
 <section class="projects">
-    <mat-accordion *ngFor="let project of projectsArray; last as isLast" >
+    <mat-accordion *ngFor="let project of projectsArray; last as isLast">
         <mat-expansion-panel #panel hideToggle [expanded]="project.boolean">
             <mat-expansion-panel-header>
             <mat-panel-description>
@@ -42,7 +42,22 @@
                     <figcaption>{{ dialog.figcaption }}</figcaption>
                 </figure>
 
-                <footer>
+                <mat-chip-list class="mat-chip-list-stacked" aria-label="Project links">
+                    <mat-chip color="primary" selected>
+                        <a [href]="project.github" target="_blank">
+                            <fa-icon [icon]="faGithub"></fa-icon>
+                            <span> Voir le repository du projet</span>
+                        </a>
+                    </mat-chip>
+                    <mat-chip *ngIf="project.demo">
+                        <a [href]="project.demo" target="_blank">
+                            <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
+                            <span> Voir une démo live</span>
+                        </a>
+                    </mat-chip>
+                </mat-chip-list>
+
+                <!-- <footer>
                     <a [href]="project.github" target="_blank">
                         <fa-icon [icon]="faGithub"></fa-icon>
                         <span> Voir le repository du projet</span>
@@ -51,7 +66,7 @@
                         <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
                         <span> Voir une démo live</span>
                     </a>
-                </footer>
+                </footer> -->
                 <button mat-raised-button color="primary" (click)="panel.toggle()">Fermer</button>
             </div>
         </mat-expansion-panel>

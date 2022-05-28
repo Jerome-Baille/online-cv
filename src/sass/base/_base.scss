@@ -36,3 +36,14 @@ mat-panel-description {
 .mat-expansion-panel-body {
     padding: 0 !important;
 }
+
+.mat-chip-list-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: 1rem !important;
+}
+
+mat-chip {
+    max-width: 200px;
+  }

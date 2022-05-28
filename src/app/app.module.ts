@@ -12,6 +12,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatChipsModule} from '@angular/material/chips';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ProjectsComponent, 
   bookiDesktop, bookiMobile, 
@@ -72,6 +73,7 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
     MatIconModule,
     MatProgressBarModule,
     MatExpansionModule,
+    MatChipsModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {

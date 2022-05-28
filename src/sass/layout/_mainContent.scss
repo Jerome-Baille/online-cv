@@ -38,6 +38,19 @@
         text-transform: uppercase;
     }
 
+    &__logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem auto;
+
+        & img {
+            max-height: 250px;
+            max-width: 100%;
+        }
+    }
+
     &__ul {
         line-height: 2rem;
     }
