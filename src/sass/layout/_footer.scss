@@ -1,0 +1,12 @@
+#footer {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $footerText;
+
+    & .heart {
+        color: $footerHeart;
+        padding: 0 5px;
+    }
+}

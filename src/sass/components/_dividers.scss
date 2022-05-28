@@ -1,0 +1,23 @@
+// horizontal divider
+.divider
+{
+	position: relative;
+	margin: 1rem auto;
+	height: 1px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        height: 1px;
+        background-image: linear-gradient(to right, transparent, darkgrey, transparent);
+    }
+}
+
+// vertical divider
+.pipe-divider {
+    padding:0 5px;
+}

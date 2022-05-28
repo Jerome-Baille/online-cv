@@ -1,0 +1,80 @@
+// to the top button
+#myBtn {
+    opacity: 0; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+  
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 1.5em !important; /* Increase font size */
+
+    -moz-transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    transform: rotate(315deg);
+}
+  
+  #myBtn:hover {
+    color: $bodyRocket;
+    & fa-icon {
+        filter: drop-shadow(-4px 4px 1px $flameRocket);
+    }
+
+  }
+  
+.show-scrollTop {
+    opacity: 1 !important;
+    transition: all 0.2s ease-in-out;
+}
+
+// X to close button project description
+.close-btn {
+    float: right;
+    top: -12px;
+    right:-12px;
+
+    &__icon {
+        transition: 1s ease-in-out;
+
+        &:hover {
+            transform: rotate(180deg);
+          }
+    }
+}
+
+// Lang selection button
+.btn-lang__container {
+  text-align: end;
+
+  & button {
+      font-size: 1rem;
+  }
+
+  & span {
+      color: $primaryColor;
+  }
+}
+
+// Project description
+.btn-invisible {
+  width: 100%;
+  padding: 20px;
+  outline: none;
+  border: none;
+  background: none;
+  color: $footerText;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+
+  &:hover {
+      border-radius: 8px 8px 0 0;
+      animation: button-opacity 0.8s both;
+  }
+}

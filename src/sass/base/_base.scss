@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;  
+    font-family: 'Assistant', sans-serif;   
+}
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    background: $backgroundColor;
+    padding: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+// expansion panel
+mat-expansion-panel-header {
+    height: fit-content !important;
+    padding: 0 !important;
+}
+
+mat-panel-description {
+    margin: 0 !important;
+}
+
+.mat-expansion-panel-body {
+    padding: 0 !important;
+}
