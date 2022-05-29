@@ -50,6 +50,10 @@
         &:last-child {
             margin-bottom: 0;
         }
+
+        & .cryptedmail:after {
+            content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+          }
     }
 
     &__soft-skills {

@@ -46,4 +46,10 @@ mat-panel-description {
 
 mat-chip {
     max-width: 200px;
+
+    & a {
+        display: flex;
+        column-gap: 1rem;
+    }
+
   }

@@ -14,16 +14,7 @@ export class ProjectsComponent implements OnInit {
   faGithub = faGithub;
   faArrowUpRightFromSquare = faArrowUpRightFromSquare;
 
-  // panelOpenState: boolean = false;
-  // bookiPanel: boolean = false;
-  // ohMyFoodPanel: boolean = false;
-  // laChouetteAgencePanel: boolean = false;
-  // kanapPanel: boolean = false;
-  // piiquantePanel : boolean = false;
-  // groupomaniaPanel: boolean = false;
-
   projectsArray: any = [];
-
 
   constructor(
     public dialog: MatDialog
@@ -113,18 +104,6 @@ export class ProjectsComponent implements OnInit {
         break;
     }
   }
-  
-
-  // closePanel(src: any) {
-  //   console.log(src);
-  //   src = !src;
-  //   src == 'bookiPanel' ? this.projectsArray.boolean = !this.projectsArray.boolean : null;
-  //   src == 'ohMyFoodPanel' ? this.ohMyFoodPanel = !this.ohMyFoodPanel : null;
-  //   src == 'laChouetteAgencePanel' ? this.laChouetteAgencePanel = !this.laChouetteAgencePanel : null;
-  //   src == 'kanapPanel' ? this.kanapPanel = !this.kanapPanel : null;
-  //   src == 'piiquantePanel' ? this.piiquantePanel = !this.piiquantePanel : null;
-  //   src == 'groupomaniaPanel' ? this.groupomaniaPanel = !this.groupomaniaPanel : null;
-  // }
 }
 
 

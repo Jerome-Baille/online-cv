@@ -9,7 +9,11 @@
     </div>
     <div class="contact-container__element">
         <fa-icon [icon]="faEnveloppe"></fa-icon>
-        <p>baille.jerome@gmail.com</p>
+        <a href="#" class="cryptedmail"
+            data-name="baille.jerome"
+            data-domain="gmail"
+            data-tld="com"
+            onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
     </div>
     <div class="contact-container__element">
         <fa-icon [icon]="faPhone"></fa-icon>
