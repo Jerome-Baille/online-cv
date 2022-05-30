@@ -400,12 +400,13 @@
             "company": "Crédit Agricole du Languedoc",
             "location": "Nîmes, FRANCE",
             "date": "2015 - 2016",
-            "task" : [            
-                "Welcoming customers and selling different products",
-                "Making appointments with financial advisors",
+            "task" : [  
+                "Assisting the Manager with operational issues",
+                "Scheduling meetings and team building sessions as required",
+                "Providing excellent customer service",
                 "Compliance management",
-                "Management of daily operations (deposits, withdrawals and transfers)",
-                "Cash and ATM management"
+                "Assisting customers with their banking needs",
+                "Balancing ledger and ATM management"                          
             ]
         },
         {
@@ -415,14 +416,12 @@
             "position": "Receptionist",
             "company": "Banque Populaire du sud",
             "location": "Nîmes, FRANCE",
-            "date": "2013 et 2014",
+            "date": "2013 and 2014",
             "task": [
-                "Welcoming the public in the agency and by phone",
-                "Making appointments with advisors",
-                "Identification of customer needs and presentation of products that meet their expectations",
-                "Management of daily operations (deposits, withdrawals and transfers)",
-                "Management of the various documents and products (checkbooks, bank cards...) to be issued to customers after verification of their identity",
-                "Management of the mail received by the agency"
+                "Maintaining office security by following safety procedures and controlling access via the reception desk",
+                "Maintaining the cash drawer using proper procedures",
+                "Perform other clerical receptionist duties such as filing, photocopying and sending e-mails",
+                "Assisting customers with their banking needs"
             ]
         }
     ],
