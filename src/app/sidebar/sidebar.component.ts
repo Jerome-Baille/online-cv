@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faLocationDot, faMapLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faFilePdf, faLocationDot, faMapLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-sidebar',
@@ -19,6 +19,7 @@ export class SidebarComponent implements OnInit {
   faPhone = faPhone;
   faLinkedinIn = faLinkedinIn;
   faGithub = faGithub;
+  faFilePdf = faFilePdf;
 
   constructor() { }
 

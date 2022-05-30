@@ -27,6 +27,11 @@
         <fa-icon [icon]="faGithub"></fa-icon>
         <a href="https://github.com/Jerome-Baille">Jerome-Baille</a>
     </div>            
+    <div class="contact-container__element">
+        <fa-icon [icon]="faFilePdf"></fa-icon>
+        <a *ngIf="lang=='fr'" href="assets/pdf/Jerome Baille - CV 2022 - Dev Web.pdf" target="_blank">CV au format PDF</a>
+        <a *ngIf="lang=='en'" href="assets/pdf/Jerome Baille - CV 2022 - Web Dev.pdf" target="_blank">PDF Resume</a>
+    </div>            
 </section>
 
 <section class="competences-container">
