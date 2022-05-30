@@ -17,20 +17,21 @@
     </div>
     <div class="contact-container__element">
         <fa-icon [icon]="faPhone"></fa-icon>
-        <p>06 18 27 05 61</p>
+        <a *ngIf="lang=='fr'" href="tel:+33618270561">06 18 27 05 61</a>
+        <a *ngIf="lang=='en'" href="tel:+33618270561">+33 6 18 27 05 61</a>
     </div>
     <div class="contact-container__element">
         <fa-icon [icon]="faLinkedinIn"></fa-icon>
-        <a href="http://www.linkedin.com/in/jerome-baille/">Jerome-baille</a>
+        <a href="http://www.linkedin.com/in/jerome-baille/" target="_blank">Jerome-baille</a>
     </div>            
     <div class="contact-container__element">
         <fa-icon [icon]="faGithub"></fa-icon>
-        <a href="https://github.com/Jerome-Baille">Jerome-Baille</a>
+        <a href="https://github.com/Jerome-Baille" target="_blank">Jerome-Baille</a>
     </div>            
     <div class="contact-container__element">
         <fa-icon [icon]="faFilePdf"></fa-icon>
-        <a *ngIf="lang=='fr'" href="assets/pdf/Jerome Baille - CV 2022 - Dev Web.pdf" target="_blank">CV au format PDF</a>
-        <a *ngIf="lang=='en'" href="assets/pdf/Jerome Baille - CV 2022 - Web Dev.pdf" target="_blank">PDF Resume</a>
+        <a *ngIf="lang=='fr'" href="assets/pdf/Jerome Baille - CV 2022 - FR.pdf" target="_blank">CV au format PDF</a>
+        <a *ngIf="lang=='en'" href="assets/pdf/Jerome Baille - CV 2022 - EN.pdf" target="_blank">PDF Resume</a>
     </div>            
 </section>
 
